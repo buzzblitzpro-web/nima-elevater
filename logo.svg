@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <rect width="46" height="46" x="7" y="7" rx="10" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  <!-- Elevator Shaft & Up/Down Arrows Symbol -->
+  <path d="M22 35L30 22L38 35H22Z" fill="#F59E0B"/>
+  <path d="M25 38H35V42H25V38Z" fill="#94A3B8"/>
+  <rect x="15" y="14" width="3" height="32" rx="1.5" fill="#F59E0B" fill-opacity="0.4"/>
+  <rect x="42" y="14" width="3" height="32" rx="1.5" fill="#F59E0B" fill-opacity="0.4"/>
+  <!-- Typography -->
+  <text x="64" y="32" fill="#F8FAFC" font-family="Outfit, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">NIMMA</text>
+  <text x="64" y="46" fill="#F59E0B" font-family="Outfit, sans-serif" font-size="11" font-weight="600" letter-spacing="3">ELEVATORS</text>
+</svg>

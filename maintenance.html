@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Outfit:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#0a0e18", "on-secondary": "#233143", "surface-dim": "#0f131d", "primary-fixed-dim": "#bec6e0", "primary-container": "#0f172a", "surface-container-highest": "#313540", "on-tertiary-fixed": "#2a1700", "surface-variant": "#313540", "tertiary-fixed-dim": "#ffb95f", "on-surface-variant": "#c6c6cd", "outline-variant": "#45464d", "on-surface": "#dfe2f1", "secondary-fixed": "#d4e4fa", "error-container": "#93000a", "primary-fixed": "#dae2fd", "on-tertiary-fixed-variant": "#653e00", "on-secondary-fixed-variant": "#39485a", "surface-container": "#1c1f2a", "surface-container-high": "#262a35", "primary": "#bec6e0", "on-primary-container": "#798098", "on-primary-fixed": "#131b2e", "background": "#0f131d", "on-tertiary-container": "#b47300", "on-tertiary": "#472a00", "tertiary-container": "#251400", "surface-container-low": "#171b26", "surface": "#0f131d", "on-secondary-container": "#a7b6cc", "tertiary": "#ffb95f", "on-primary": "#283044", "inverse-on-surface": "#2c303b", "secondary": "#b9c8de", "secondary-fixed-dim": "#b9c8de", "on-error": "#690005", "error": "#ffb4ab", "inverse-surface": "#dfe2f1", "on-error-container": "#ffdad6", "outline": "#909097", "surface-tint": "#bec6e0", "secondary-container": "#39485a", "on-background": "#dfe2f1", "surface-bright": "#353944", "tertiary-fixed": "#ffddb8", "inverse-primary": "#565e74", "on-primary-fixed-variant": "#3f465c", "on-secondary-fixed": "#0d1c2d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "margin": "3rem", "space-xl": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.75rem", "space-sm": "0.5rem" }, "fontFamily": { "label-code": [ "JetBrains Mono" ], "display-hero": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-caps": [ "Outfit" ], "headline-sm": [ "Outfit" ], "headline-xl": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Outfit" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Outfit" ], "headline-lg": [ "Outfit" ], "headline-lg-mobile": [ "Outfit" ] }, "fontSize": { "label-code": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter flex items-center justify-between gap-gutter"><a href="index.html" class="flex items-center gap-space-md shrink-0 hover:opacity-90 transition-opacity"><img alt="Nimma Elevator Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBwrauxq8DdMlk3jU8p-KzdS9nrJ3VsICOPJiuP_Rj44xLLByEMcnMXiKqppf-k07Ct6xMi1j80EjlHpYxgR-jPml8Dus5HeIEqdCKkKXczqoSxGx8cg7XzPAiGP5iT02srkBDk6VnznukxhKUiP5ucSexu7tbTFFElbGxWYV-Q-VjAuzHTx9IGSnWTVip8FvHRdge-_MlWErKxMx4bxeeLnUmkuMQky1SSnqcBKAs3kr5GknSQx46rA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Nimma Elevator</span><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Architectural Mobility</span></div></a><div class="hidden xl:flex items-center flex-1 max-w-md mx-space-sm"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary transition-all" placeholder="Search lifts, specs, models, services..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-tertiary font-medium relative after:content-[''] after:absolute after:bottom-[-26px] after:left-0 after:right-0 after:h-[2px] after:bg-tertiary"><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="products" href="products.html">Products</a><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="about-us" href="about.html">About Us</a><a aria-current="page" class="transition-colors text-tertiary font-medium relative after:content-[''] after:absolute after:bottom-[-26px] after:left-0 after:right-0 after:h-[2px] after:bg-tertiary" data-path="maintenance" href="maintenance.html">Maintenance</a><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="contact" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden 2xl:flex items-center gap-space-xs text-on-surface-variant hover:text-tertiary transition-colors" href="tel:18005556466"><span class="material-symbols-outlined text-[18px] text-tertiary">support_agent</span><span class="font-label-code text-label-code text-on-surface tracking-wider">+1 (800) 555-NIMMA</span></a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)]" data-path="contact" href="contact.html">Get a Free Quote</a><button onclick="window.triggerWhatsAppTemplate('quote')" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] text-xs font-headline-sm font-semibold rounded-lg transition-all" title="Direct WhatsApp Inquiries">
+  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
+  <span>WhatsApp</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Visual Hero / Architectural Status Header -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#ffb95f_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-[1440px] mx-auto px-gutter py-space-xl relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-gutter">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-code text-label-code text-tertiary tracking-widest uppercase">Telemetry • Maintenance Operations Core</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+          Comprehensive Maintenance, 24/7 Emergency Support &amp; Modernization
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-md max-w-2xl">
+          Engineered reliability for mission-critical vertical transit. Real-time telemetry monitoring, certified mechanical precision, and sub-30 minute emergency dispatch for metropolitan installations.
+        </p>
+</div>
+<!-- Live Operations Metric Cluster -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm shrink-0 bg-surface-container-low p-space-md rounded-xl shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Average Dispatch</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">18.4 <span class="font-body-sm text-body-sm text-tertiary font-normal">Mins</span></span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Fleet Uptime Index</span>
+<span class="font-headline-md text-headline-md font-bold text-secondary">99.98%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 24/7 Emergency Rapid Response Banner (Monolithic Priority Strip) -->
+<section class="w-full bg-surface-container-high py-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-gutter flex flex-col xl:flex-row items-center justify-between gap-gutter">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-tertiary flex items-center justify-center shrink-0 shadow-[0_0_24px_rgba(255,185,95,0.35)]">
+<span class="material-symbols-outlined text-on-tertiary text-[32px]">e911_emergency</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="bg-surface-container-lowest text-tertiary font-label-code text-label-code px-2 py-0.5 rounded">PRIORITY CODE 1</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">24/7 Rapid Entrapment &amp; Breakdown Command</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Guaranteed ≤ 30-minute on-site response for passenger entrapments via live GPS-routed service vans.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md w-full xl:w-auto justify-start xl:justify-end">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] animate-pulse">fmd_good</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold">42 Mobile Fleet Units Active</span>
+</div>
+<a class="inline-flex items-center gap-space-sm bg-tertiary text-on-tertiary px-space-lg py-space-sm rounded-lg font-headline-sm text-body-lg font-bold shadow-[0_0_20px_rgba(255,185,95,0.3)] hover:bg-tertiary-fixed transition-all" href="tel:18005556466">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<span>+1 (800) 555-NIMMA</span>
+</a>
+</div>
+</div>
+</section>
+<!-- AMC Contract Tiers Comparison -->
+<section class="max-w-[1440px] mx-auto px-gutter py-space-xl w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider">Predictable Lifecycle Assurance</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-space-xs">Annual Maintenance Contracts (AMC)</h2>
+</div>
+<div class="flex items-center gap-space-sm mt-space-sm md:mt-0 bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-md py-1 rounded bg-surface-container text-on-surface font-body-sm text-body-sm font-medium shadow-sm" id="billing-annual">Annual Plan</button>
+<button class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium" id="billing-multi">Multi-Year Enterprise</button>
+</div>
+</div>
+<!-- Tiers Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Tier 1: Basic Safety -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-md transition-all hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-on-surface-variant">TIER-01 // STATUTORY</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified_user</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Basic Safety Tier</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Essential regulatory code compliance and scheduled mechanical lubrication for low-traffic multi-family units.
+          </p>
+<div class="my-space-md p-space-md bg-surface-container-lowest rounded-lg">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Scheduled Interval</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Quarterly Physical Audits</div>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>Periodic rail lubrication &amp; brake pad friction calibration</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>Mechanical governor &amp; safety wedge clearance checks</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>Annual statutory safety certification filing</span>
+</li>
+<li class="flex items-start gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0">remove</span>
+<span>Parts replacement cost billed separately</span>
+</li>
+<li class="flex items-start gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0">remove</span>
+<span>Standard 4-hour breakdown SLA</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-md">
+<a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-headline-sm text-body-sm font-semibold transition-all" href="#quote-section">
+            Select Safety Tier
+          </a>
+</div>
+</div>
+<!-- Tier 2: Comprehensive Care (Highlighted) -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase px-space-md py-1 rounded-bl-lg font-bold tracking-wider">
+          MOST POPULAR
+        </div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-tertiary">TIER-02 // ALL-INCLUSIVE</span>
+<span class="material-symbols-outlined text-tertiary text-[24px]">home_repair_service</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Comprehensive Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Complete operational peace of mind with 100% genuine components coverage and 24/7 cloud telemetry linkage.
+          </p>
+<div class="my-space-md p-space-md bg-surface-container-lowest rounded-lg">
+<span class="font-label-caps text-label-caps uppercase text-tertiary">Inspection Rhythm</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Bi-Monthly Physical + 24/7 IoT Sensor Pulse</div>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">verified</span>
+<span class="font-semibold">All major &amp; minor mechanical parts included</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>24/7 Priority breakdown emergency dispatch</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>Continuous IoT vibration, motor heat &amp; cycle diagnostics</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>Cabin interior fixture replacements (LED, buttons, fans)</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">check_circle</span>
+<span>Free Nimma Cloud Portal enterprise account</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-md">
+<div class="flex flex-col gap-2">
+      <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-tertiary hover:bg-tertiary-fixed text-on-tertiary font-headline-sm text-body-sm font-bold shadow-[0_0_16px_rgba(255,185,95,0.25)] transition-all" href="contact.html">Deploy Comprehensive Care</a>
+      <button onclick="window.triggerWhatsAppTemplate('maintenance')" class="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] font-headline-sm text-xs font-bold transition-all">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
+        <span>Inquire AMC on WhatsApp</span>
+      </button>
+    </div>
+</div>
+</div>
+<!-- Tier 3: Elite Enterprise -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-md transition-all hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-secondary">TIER-03 // MISSION-CRITICAL</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">corporate_fare</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Elite Enterprise</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Engineered exclusively for Grade-A commercial headquarters, luxury hospitality, and high-traffic healthcare systems.
+          </p>
+<div class="my-space-md p-space-md bg-surface-container-lowest rounded-lg">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Operational Model</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Dedicated Resident Site Technician</div>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<span class="font-semibold">Zero-downtime parts depot on-site</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<span>Predictive AI analytics to preempt wire rope &amp; bearing wear</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<span>Instant sub-10 minute on-premise technician mobilization</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<span>Tailored traffic optimization during peak transit surges</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<span>Quarterly C-level executive safety &amp; energy audit briefings</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-md">
+<a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-headline-sm text-body-sm font-semibold transition-all" href="#quote-section">
+            Consult Enterprise Architect
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Modernization & Retrofit Bento Grid -->
+<section class="bg-surface-container-lowest py-space-xl w-full">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="flex flex-col max-w-2xl mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider">Lifecycle Extension</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-space-xs">Elevator Modernization &amp; Retrofit Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Transform legacy hoistways without structural rebuilding. Upgrade energy performance up to 45%, integrate smart destination controls, and revamp architectural interiors.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-gutter">
+<!-- Feature 1: Controller Upgrade -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">developer_board</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Microprocessor Controller Overhaul</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Replace outdated relay-logic boards with high-speed 32-bit digital microprocessor controllers for whisper-quiet acceleration profiles and reduced passenger wait times.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm font-label-code text-label-code text-tertiary flex items-center gap-1">
+<span>EFFICIENCY +32%</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Feature 2: Regenerative Drives -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">bolt</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Regenerative Motor Drives</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Capture kinetic energy generated during full-car descents or empty-car ascents, converting mechanical motion straight back into clean clean AC power for the building grid.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm font-label-code text-label-code text-tertiary flex items-center gap-1">
+<span>GRID RECAPTURE 40%</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Feature 3: Photo Rich Cabin Interior Showcase -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-48 w-full">
+<img class="w-full h-full object-cover" data-alt="Luxurious brushed brass and dark titanium elevator cab interior with linear LED vertical cove lighting and minimalist digital touch screen operating panel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8ml8TSAV9mf5hv8OHQ8ZYg6eT1-RrpYrtNs0Bn1EoMUO4puAcVQEgnuWkaDeQNd9VA3f0VFLa4I71n07ee80nyIiG3Hm8oBZVytFi88-W3bwR96Zzz2vHfs4aH4IeF8mEY4cb2MGkf7Yn19b4GkWamOChzZfqC0R95l7rKzMMRAbV_QlEMgn0U9j7YIaHDnkl1_DgScekG8CC4l860iCYsg5uDtQIxDIdPFw2i6Y_epxXAhirGEQM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between -mt-4 relative z-10">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cabin Interior Architecture</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Custom architectural cladding in brushed hairline titanium, warm brass accents, acoustically dampened flooring, and flush capacitive touch glass panels.
+              </p>
+</div>
+<span class="font-label-code text-label-code text-secondary mt-space-sm">ARCHITECTURAL LINE // 2025</span>
+</div>
+</div>
+<!-- Feature 4: Door Mechanism Overhaul -->
+<div class="md:col-span-3 lg:col-span-6 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[28px]">sensor_door</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">75% OF BREAKDOWNS PREVENTED</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Variable Frequency (VVVF) Door Operators</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Elevator door mechanisms generate the majority of service interruptions. We upgrade wear-prone mechanical clutches with permanent-magnet brushless VVVF drives and multi-beam 3D optical safety curtains.
+            </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[18px]">done</span>
+<span>Zero-Jolt Motion</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[18px]">done</span>
+<span>128-Beam Light Curtains</span>
+</div>
+</div>
+</div>
+<!-- Feature 5: Energy Audits & Compliance -->
+<div class="md:col-span-3 lg:col-span-6 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">energy_program_saving</span>
+</div>
+<span class="font-label-code text-label-code text-secondary">ISO 25745-2 CLASS A</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Full Facility Energy &amp; Code Compliance Audits</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Comprehensive baseline consumption testing, thermal dissipation measurements, and code gap assessments against ASME A17.1, EN 81-20/50, and local seismic mandates.
+            </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">assessment</span>
+<span>Detailed ROI Matrix</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">description</span>
+<span>Authority Submission Ready</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Digital Customer Portal Feature Preview -->
+<section class="max-w-[1440px] mx-auto px-gutter py-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Description column -->
+<div class="lg:col-span-5 flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider">Connected Infrastructure</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-space-xs">Nimma Pulse™ Enterprise Customer Portal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-md">
+          Unified visibility across your entire hoistway portfolio. Real-time telemetry, automated regulatory cert renewals, instant breakdown ticket dispatch, and complete engineering audit logs accessible from desktop or mobile.
+        </p>
+<div class="flex flex-col gap-space-md mt-space-lg">
+<div class="flex gap-space-md items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">monitor_heart</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Live Hoistway Telemetry</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Continuous tracking of car speed, landing accuracy, trip counts, and door cycle wear metrics.</p>
+</div>
+</div>
+<div class="flex gap-space-md items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Instant Service Ticket Escalation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">1-click service call dispatching with live GPS tracking of the en-route technician team.</p>
+</div>
+</div>
+<div class="flex gap-space-md items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Digital Compliance Certificates</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Download municipal annual safety permits, load test records, and ISO reports instantly.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Portal Dashboard Preview UI (Machined Telemetry Pod) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md sm:p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md">
+<!-- Top Bar of portal UI -->
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Nimma Pulse Console</span>
+<span class="font-label-code text-label-code text-on-surface-variant hidden sm:inline">• HUDSON TOWERS (BLDG-A)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code bg-surface-container px-2 py-0.5 rounded text-tertiary">LIVE TELEMETRY</span>
+</div>
+</div>
+<!-- 3-Lift Bank Status Widget -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Lift Car 01 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant font-bold">LIFT #01 (PASSENGER)</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-tertiary font-label-code">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> RUNNING
+              </span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">FL 34</span>
+<span class="font-label-code text-label-code text-on-surface-variant">2.5 m/s ↑</span>
+</div>
+<!-- Lift Mini Track Bar -->
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[70%] rounded-full"></div>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[11px]">Load: 420 kg (45%)</span>
+</div>
+<!-- Lift Car 02 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant font-bold">LIFT #02 (PASSENGER)</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-tertiary font-label-code">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> RUNNING
+              </span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">FL 12</span>
+<span class="font-label-code text-label-code text-on-surface-variant">0.0 m/s [DOOR OPEN]</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[25%] rounded-full"></div>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[11px]">Load: 180 kg (20%)</span>
+</div>
+<!-- Lift Car 03 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant font-bold">LIFT #03 (SERVICE)</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-secondary font-label-code">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> INSPECTION
+              </span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">FL 01</span>
+<span class="font-label-code text-label-code text-secondary">SERVICING DOCK</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[5%] rounded-full"></div>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[11px]">Tech: ID #8492 On-Site</span>
+</div>
+</div>
+<!-- Recent Portal Activity Table Preview -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Active Maintenance Queue &amp; Compliance Logs</span>
+<span class="font-label-code text-label-code text-tertiary">All 8 Shafts Monitored</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between py-1.5 px-space-sm bg-surface-container rounded text-body-sm font-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-code text-label-code text-on-surface">CERT-ASME-2025-Q1</span>
+<span class="text-on-surface-variant hidden sm:inline">Annual Overhaul Certified</span>
+</div>
+<span class="text-on-surface-variant font-label-code text-label-code">Valid until 2026-03</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-space-sm bg-surface-container rounded text-body-sm font-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">build</span>
+<span class="font-label-code text-label-code text-on-surface">TICKET #9821</span>
+<span class="text-on-surface-variant hidden sm:inline">Lift 03 Door Roller Preventive Replacement</span>
+</div>
+<span class="text-tertiary font-label-code text-label-code">In Progress</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Action: Request AMC Quote OR Book Immediate Service Form -->
+<section class="w-full bg-surface-container py-space-xl" id="quote-section">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Text & Contact sidebar -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider">Fast Engineering Dispatch</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-space-xs">
+              Book a Service Inspection or Request an AMC Proposal
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-md">
+              Whether you require emergency diagnosis for a current stoppage, an overhaul roadmap, or a comprehensive maintenance contract evaluation, our senior elevator engineers will respond within 60 minutes.
+            </p>
+<div class="mt-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">phone_in_talk</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Dispatch Operations Hotline</span>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">+1 (800) 555-NIMMA</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Standard Engineering Support</span>
+<div class="font-body-md text-body-md text-on-surface">Monday – Sunday: Continuous 24/7/365</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Image preview to anchor visual weight -->
+<div class="mt-space-lg rounded-xl overflow-hidden relative h-44 hidden lg:block shadow-md">
+<img class="w-full h-full object-cover" data-alt="Close up precision engineering shot of clean elevator traction machine ropes, grooved steel sheaves and digital brake solenoid sensor in modern elevator machine room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG8kyd5OQZ4QSnDElbVcWR9ZrGicCNTbKeKJ7SgiJsGVzjPzc0XnlnS0QvZLu0RP6SU7gZL8EvtDIb-rFkeMYQdWZDggWzxrM9z3ZZEzrp1Mq8MFEkfXUwEZu0iuD1dwU_9BoK777Srlr4Ys0RDm8IGiLxIr_85MnxmM1usqd6pPs04DXV33lnvRDZSiQGipUp5RdNR0XL3o9gomH8TPhin0vfCZvT5v1VQHSgsojP6Djh3qE58qv6"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container/90 via-surface-container/30 to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="font-label-code text-label-code text-tertiary">GENUINE OEM COMPONENTS GUARANTEED</span>
+</div>
+</div>
+</div>
+<!-- Interactive Quote / Booking Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md sm:p-space-lg rounded-xl shadow-xl flex flex-col">
+<form class="flex flex-col gap-space-md" id="amc-booking-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+<!-- Request Type Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Select Primary Request</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<label class="cursor-pointer bg-surface-container p-space-sm rounded-lg flex items-center gap-space-sm hover:bg-surface-container-high transition-colors">
+<input checked="" class="accent-tertiary w-4 h-4" name="request_type" type="radio" value="quote"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">New AMC Contract Quote</span>
+</label>
+<label class="cursor-pointer bg-surface-container p-space-sm rounded-lg flex items-center gap-space-sm hover:bg-surface-container-high transition-colors">
+<input class="accent-tertiary w-4 h-4" name="request_type" type="radio" value="audit"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">On-Site Safety Audit / Repair</span>
+</label>
+</div>
+</div>
+<!-- Contact Information Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="contact-name">Full Name *</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md placeholder:text-on-surface-variant" id="contact-name" placeholder="e.g. David Sterling" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="contact-phone">Phone / Hotline *</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md placeholder:text-on-surface-variant" id="contact-phone" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="contact-email">Email Address *</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md placeholder:text-on-surface-variant" id="contact-email" placeholder="name@company.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="property-type">Building Classification</label>
+<select class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md" id="property-type">
+<option value="commercial">Commercial Tower / Grade-A Office</option>
+<option value="residential">Residential High-Rise / Condo</option>
+<option value="hospital">Healthcare / Hospital Facility</option>
+<option value="industrial">Industrial / Freight Logistics</option>
+<option value="luxury-home">Private Residence / Home Lift</option>
+</select>
+</div>
+</div>
+<!-- Technical Elevator Parameters -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="lift-count">Number of Lifts</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md" id="lift-count" max="100" min="1" type="number" value="2"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="preferred-tier">Target AMC Tier</label>
+<select class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md" id="preferred-tier">
+<option value="basic">Basic Safety Tier</option>
+<option selected="" value="comprehensive">Comprehensive Care</option>
+<option value="elite">Elite Enterprise</option>
+<option value="modernize">Modernization Retrofit</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="current-make">Current OEM / Brand</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md placeholder:text-on-surface-variant" id="current-make" placeholder="Nimma / Otis / Schindler / Other" type="text"/>
+</div>
+</div>
+<!-- Notes field -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant" for="service-notes">Facility Location &amp; Specific Details</label>
+<textarea class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md placeholder:text-on-surface-variant" id="service-notes" placeholder="Provide property address, current symptoms or specific modernization requirements..." rows="3"></textarea>
+</div>
+<!-- Submit Button & Feedback -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<button class="w-full py-space-sm px-space-lg bg-tertiary text-on-tertiary font-headline-sm text-body-lg font-bold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)] flex items-center justify-center gap-space-sm" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Submit Maintenance Request</span>
+</button>
+<div class="hidden p-space-sm bg-surface-container rounded-lg flex items-center gap-space-sm text-tertiary font-body-sm text-body-sm" id="form-feedback">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Ticket registered in dispatch system. A certified service supervisor is reviewing your specifications.</span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Inline Script for UI Interactivity -->
+<script>
+    (function() {
+      const btnAnnual = document.getElementById('billing-annual');
+      const btnMulti = document.getElementById('billing-multi');
+
+      if (btnAnnual && btnMulti) {
+        btnAnnual.addEventListener('click', function() {
+          btnAnnual.classList.add('bg-surface-container', 'text-on-surface', 'shadow-sm');
+          btnAnnual.classList.remove('text-on-surface-variant');
+          btnMulti.classList.remove('bg-surface-container', 'text-on-surface', 'shadow-sm');
+          btnMulti.classList.add('text-on-surface-variant');
+        });
+
+        btnMulti.addEventListener('click', function() {
+          btnMulti.classList.add('bg-surface-container', 'text-on-surface', 'shadow-sm');
+          btnMulti.classList.remove('text-on-surface-variant');
+          btnAnnual.classList.remove('bg-surface-container', 'text-on-surface', 'shadow-sm');
+          btnAnnual.classList.add('text-on-surface-variant');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1440px] mx-auto px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Nimma Elevator Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBwrauxq8DdMlk3jU8p-KzdS9nrJ3VsICOPJiuP_Rj44xLLByEMcnMXiKqppf-k07Ct6xMi1j80EjlHpYxgR-jPml8Dus5HeIEqdCKkKXczqoSxGx8cg7XzPAiGP5iT02srkBDk6VnznukxhKUiP5ucSexu7tbTFFElbGxWYV-Q-VjAuzHTx9IGSnWTVip8FvHRdge-_MlWErKxMx4bxeeLnUmkuMQky1SSnqcBKAs3kr5GknSQx46rA"/><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Nimma Elevator</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Pioneering precision vertical transit engineering for luxury residential, high-capacity commercial hubs, and industrial facilities worldwide. Built for maximum reliability, speed, and safety.</p><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-tertiary">24/7 Rapid Emergency Response</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">e911_emergency</span><span class="font-label-code text-label-code font-bold text-on-surface">1-800-555-NIMMA • EXT 911</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Navigation</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">Home</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Products</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="about.html">About Us</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="maintenance" href="maintenance.html">Maintenance</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="contact.html">Contact</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Lift Catalog</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Home Lift Series</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Commercial Traction Lift</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Heavy Duty Service Lift</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Hydraulic Freight Systems</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Scenic Panoramic Glass Lifts</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Compliance &amp; Specs</span><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span><span class="font-label-code text-label-code text-on-surface">ISO 9001:2015 Certified</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span><span class="font-label-code text-label-code text-on-surface">CE Safety Directive Certified</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span><span class="font-label-code text-label-code text-on-surface">ASME A17.1 / CSA B44</span></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low/50 px-gutter py-space-md rounded-lg"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nimma Elevator Technologies Inc. All rights reserved. Monolithic Precision Systems.</span><div class="flex items-center gap-gutter font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Safety Disclaimers</a></div></div></div></footer><script src="whatsapp-widget.js"></script>
+</body></html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Outfit:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#0a0e18", "on-secondary": "#233143", "surface-dim": "#0f131d", "primary-fixed-dim": "#bec6e0", "primary-container": "#0f172a", "surface-container-highest": "#313540", "on-tertiary-fixed": "#2a1700", "surface-variant": "#313540", "tertiary-fixed-dim": "#ffb95f", "on-surface-variant": "#c6c6cd", "outline-variant": "#45464d", "on-surface": "#dfe2f1", "secondary-fixed": "#d4e4fa", "error-container": "#93000a", "primary-fixed": "#dae2fd", "on-tertiary-fixed-variant": "#653e00", "on-secondary-fixed-variant": "#39485a", "surface-container": "#1c1f2a", "surface-container-high": "#262a35", "primary": "#bec6e0", "on-primary-container": "#798098", "on-primary-fixed": "#131b2e", "background": "#0f131d", "on-tertiary-container": "#b47300", "on-tertiary": "#472a00", "tertiary-container": "#251400", "surface-container-low": "#171b26", "surface": "#0f131d", "on-secondary-container": "#a7b6cc", "tertiary": "#ffb95f", "on-primary": "#283044", "inverse-on-surface": "#2c303b", "secondary": "#b9c8de", "secondary-fixed-dim": "#b9c8de", "on-error": "#690005", "error": "#ffb4ab", "inverse-surface": "#dfe2f1", "on-error-container": "#ffdad6", "outline": "#909097", "surface-tint": "#bec6e0", "secondary-container": "#39485a", "on-background": "#dfe2f1", "surface-bright": "#353944", "tertiary-fixed": "#ffddb8", "inverse-primary": "#565e74", "on-primary-fixed-variant": "#3f465c", "on-secondary-fixed": "#0d1c2d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "margin": "3rem", "space-xl": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.75rem", "space-sm": "0.5rem" }, "fontFamily": { "label-code": [ "JetBrains Mono" ], "display-hero": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-caps": [ "Outfit" ], "headline-sm": [ "Outfit" ], "headline-xl": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Outfit" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Outfit" ], "headline-lg": [ "Outfit" ], "headline-lg-mobile": [ "Outfit" ] }, "fontSize": { "label-code": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter flex items-center justify-between gap-gutter"><a href="index.html" class="flex items-center gap-space-md shrink-0 hover:opacity-90 transition-opacity"><img alt="Nimma Elevator Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBwrauxq8DdMlk3jU8p-KzdS9nrJ3VsICOPJiuP_Rj44xLLByEMcnMXiKqppf-k07Ct6xMi1j80EjlHpYxgR-jPml8Dus5HeIEqdCKkKXczqoSxGx8cg7XzPAiGP5iT02srkBDk6VnznukxhKUiP5ucSexu7tbTFFElbGxWYV-Q-VjAuzHTx9IGSnWTVip8FvHRdge-_MlWErKxMx4bxeeLnUmkuMQky1SSnqcBKAs3kr5GknSQx46rA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Nimma Elevator</span><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Architectural Mobility</span></div></a><div class="hidden xl:flex items-center flex-1 max-w-md mx-space-sm"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary transition-all" placeholder="Search lifts, specs, models, services..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-tertiary font-medium relative after:content-[''] after:absolute after:bottom-[-26px] after:left-0 after:right-0 after:h-[2px] after:bg-tertiary"><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="products" href="products.html">Products</a><a aria-current="page" class="transition-colors text-tertiary font-medium relative after:content-[''] after:absolute after:bottom-[-26px] after:left-0 after:right-0 after:h-[2px] after:bg-tertiary" data-path="about-us" href="about.html">About Us</a><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="maintenance" href="maintenance.html">Maintenance</a><a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="contact" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden 2xl:flex items-center gap-space-xs text-on-surface-variant hover:text-tertiary transition-colors" href="tel:18005556466"><span class="material-symbols-outlined text-[18px] text-tertiary">support_agent</span><span class="font-label-code text-label-code text-on-surface tracking-wider">+1 (800) 555-NIMMA</span></a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)]" data-path="contact" href="contact.html">Get a Free Quote</a><button onclick="window.triggerWhatsAppTemplate('quote')" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] text-xs font-headline-sm font-semibold rounded-lg transition-all" title="Direct WhatsApp Inquiries">
+  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
+  <span>WhatsApp</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Immersive Engineering Hero -->
+<section class="relative w-full min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0 opacity-30 mix-blend-luminosity bg-cover bg-center" data-alt="Architectural low angle perspective looking straight up into a monolithic concrete and dark steel elevator test shaft with amber laser calibration light beams, precision guide rails, steel structural hoisting cables, industrial architectural photography, moody cinematic lighting, high-contrast dark ambiance with gold amber reflections" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPWi-am-woaw_M-KNo3zhdztnYIh-tEOThnCzAlKXtPxETnEzwD-TYGJ977PMh3_jp6ODHg789df__q67Uwnx1mAsF99qL6a6SiFojMRfnRXlBOP7T-Og8jDwvdusAfdnkHI7bwv1suOGWFEW-VkrKHeh9IcHRrEN_bcHWXFyyWml9sujAr47KPfdeCuTBYNt0S7l-N9wS-l_tD8n54BfsXrVjuz-2ZDE6GhgfYx78uibHz_Md8KP-')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/85 to-transparent z-10"></div>
+<div class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-tertiary/10 blur-[100px] pointer-events-none z-10"></div>
+<div class="relative z-20 max-w-[1440px] w-full mx-auto px-gutter py-space-xl flex flex-col justify-center">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded-full bg-surface-container-high text-tertiary font-label-code text-label-code uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+          SYS.HIST // EST. 1998
+        </span>
+<span class="text-on-surface-variant font-label-code text-label-code">// VERTICAL TRANSIT ARCHITECTURE</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface max-w-4xl tracking-tight mb-space-md">
+        Over 25 Years of Precision Engineering in Vertical Mobility.
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-space-lg">
+        Nimma Elevator architects silent kinetic infrastructure for iconic skylines, high-throughput commercial complexes, and bespoke residences. Engineered to micrometer tolerances with an unyielding mandate for structural integrity.
+      </p>
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-md">
+<span class="material-symbols-outlined text-tertiary text-[28px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">99.98%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Fleet Operational Uptime</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-md">
+<span class="material-symbols-outlined text-secondary text-[28px]">apartment</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">14,200+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Units Deployed Globally</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-md">
+<span class="material-symbols-outlined text-primary text-[28px]">speed</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">±0.05 mm</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Sill Leveling Accuracy</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Story & Philosophy (Monolithic Split Grid) -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Left: Structural Context & Philosophy -->
+<div class="lg:col-span-7 flex flex-col justify-between bg-surface-container-low p-space-lg lg:p-space-xl rounded-xl shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Core Philosophy</span>
+<span class="font-label-code text-label-code text-on-surface-variant">DOC: PHIL-ARCH-2025</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-space-md">
+              Silent Strength, Unseen Reliability.
+            </h2>
+<div class="space-y-space-md font-body-md text-body-md text-on-surface-variant">
+<p>
+                Founded in 1998 by mechanical structuralists and aeronautical drive experts, Nimma Elevator was conceived under a singular principle: vertical transit is not an interior accessory, but the kinetic cardiovascular core of any architectural structure.
+              </p>
+<p>
+                For over a quarter of a century, our engineering teams have rejected off-the-shelf compromises. We design, mill, calibrate, and program our own direct-drive permanent magnet synchronous traction motors and adaptive acoustic dampening hoist assemblies.
+              </p>
+<p>
+                Our vision marries deep regenerative energy recapture with automated zero-fault algorithmic dispatching. The result is pure tranquility for occupants: zero cabin vibration, whisper-quiet acceleration, and absolute peace of mind.
+              </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/60 p-space-md rounded-lg">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">shield</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">The Zero-Harm Safety Covenant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every Nimma cabin incorporates triple-redundant mechanical governor catches, bidirectional seismic damping clamps, and optical door sensors tested over 10,000,000 duty cycles before commercial sign-off.
+            </p>
+</div>
+</div>
+<!-- Right: Kinetic Factory Visualization & Blueprint Card -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<div class="relative h-72 rounded-xl overflow-hidden shadow-xl bg-surface-container-high">
+<img class="w-full h-full object-cover object-center" data-alt="Close up photo of high-precision elevator traction motor and machined bronze sheaves, fiber-reinforced steel hoist ropes, industrial engineering background with warm ambient rim lighting, slate metal surfaces, German engineering craftsmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbWlS8shvs20BJFRj0P9Zisypv96iGfsYWnJLCVdFmViHrsncCqU-rOIIDN6_O-1S_lEifR5sDGw5Iv7MTWkRgcUQk8aREaWTAYCrB8Ye2bglWeBS5lILWHmCc4M4PJdzcNQiuj0PfmTNrTm9JcGLiq21cW00cR-HYsgcg14eXZzOWYGX3ppE_NWl78xPHZ161bkPqWEwdgpYwIqx7CoDRyrovSyajNzxyxTP6bFrs9powc8qYIK3"/>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">In-House Milling</span>
+<p class="font-headline-sm text-headline-sm font-medium text-on-surface">Heavy Sheave &amp; Gearless PMSM Assembly</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-lg flex-1 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Acoustic Benchmark</span>
+<span class="font-label-code text-label-code text-on-surface-variant">ISO 18738 CERT</span>
+</div>
+<div class="py-space-md">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-display-hero text-headline-xl font-bold text-on-surface">36.4 <span class="text-headline-sm text-tertiary">dBA</span></span>
+<span class="font-label-code text-label-code text-on-surface-variant">At 6.0 m/s travel</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 32%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">
+                Industry average ambient cab noise sits at 54 dBA. Nimma cabins maintain acoustic calm comparable to a private study.
+              </p>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-code text-label-code pt-space-sm">
+<span>VIBRATION: &lt; 0.08 m/s²</span>
+<span class="text-tertiary">CLASS A1</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Manufacturing Excellence & Infrastructure (Bento Grid) -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Precision Infrastructure</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+            Where Micrometers Dictate Elevating Standards.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Our specialized 220,000 m² production complex houses automated robotics, advanced aerodynamic simulation tunnels, and high-velocity vertical test bays.
+        </p>
+</div>
+<!-- Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Tower Bay Module -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[32px]">cell_tower</span>
+<span class="font-label-code text-label-code text-on-surface-variant">TOWER-ALPHA // 168M</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">168-Meter R&amp;D Testing Tower</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              6 high-velocity experimental shafts testing regenerative brake physics, ultra-high-speed buffer impacts, and sustained 12.0 m/s wind aerodynamic stability.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-label-code text-label-code text-on-surface">
+<span>DROP-TEST RATED</span>
+<span class="text-tertiary">150% RATED LOAD</span>
+</div>
+</div>
+<!-- CNC Laser Cutting Facility -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-secondary text-[32px]">precision_manufacturing</span>
+<span class="font-label-code text-label-code text-on-surface-variant">FIBER-CNC-12KW</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Multi-Axis CNC Laser Fabrication</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Cold-rolled aircraft structural steel laser cut within 0.01 mm margins. No post-processing warping; flawless tongue-and-groove hoistway alignment brackets.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-label-code text-label-code text-on-surface">
+<span>CAPACITY: 450 TONS/MO</span>
+<span class="text-secondary">EN 1090-1 EXC3</span>
+</div>
+</div>
+<!-- Motor Winding & Cleanrooms -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-primary text-[32px]">memory</span>
+<span class="font-label-code text-label-code text-on-surface-variant">ISO CLASS 7</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Cleanroom Drive Electronics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              In-house microprocessor control board surface-mount soldering with thermal imaging validation. Designed to endure 25+ years of thermal expansion stress.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-label-code text-label-code text-on-surface">
+<span>MTBF RELIABILITY</span>
+<span class="text-primary">120,000 HRS</span>
+</div>
+</div>
+<!-- Full-width visual showcase banner -->
+<div class="md:col-span-2 lg:col-span-3 bg-surface-container rounded-xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12">
+<div class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">European &amp; ASME Certification</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface my-space-xs">Stringent Destructive &amp; Kinetic Validation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Every production iteration undergoes instantaneous freefall engagement simulations, full-speed overspeed governor locks, and fire door integrity tests up to 2 hours at 1,000°C.
+            </p>
+<div class="flex items-center gap-space-sm font-label-code text-label-code text-on-surface">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span>100% Traceability via serialized metallurgy barcodes</span>
+</div>
+</div>
+<div class="lg:col-span-7 relative min-h-[260px] bg-cover bg-center" data-alt="High-tech modern industrial elevator factory floor with autonomous robotic arms assembling stainless steel elevator car frames, clean reflections on polished epoxy floor, warm ambient ceiling lighting, high precision manufacturing atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuMwDJqQ8IrMxJKqRLwwCtV98NICos86XMu505BOR5-P2h7pEWRo1bpC_44QhLWiVAWjcbf-CXNyYDbTCWJC5ZfgCx6xA05YuUqQ8HS3t6fo1zCEQ9PbnQTEBQantmyt8rz1-24gpHrE6UOBpF9-ILsMTF6t-fL9nWyZBEwLsMLQF__cvFltHdhsv3ogVS2D9V0I1rB4Z1vGx2VnBHCk_F2GSYZrf5mIO2pu8KIrJ3nLqTrz_6ttab')">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container via-transparent to-transparent lg:block hidden"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values Section (Engineered Pillars) -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Foundational Pillars</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+          Engineered With Unbending Integrity.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Four tenets steer every CAD layout, alloy choice, and algorithmic firmware update released by our laboratories.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Value 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[26px]">square_foot</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Precision Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Guiding shoe rails polished to mirror surfaces with synthetic lubricant reservoirs ensuring frictionless kinetic ascents.
+          </p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-error text-[26px]">gavel</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Uncompromised Safety</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Hardware-level interlocks that physically prevent cabin activation whenever any safety parameter deviates by 0.001%.
+          </p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-secondary text-[26px]">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Eco-Efficiency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            4-quadrant regenerative drives feed surplus braking energy directly back into the host building's main electrical grid.
+          </p>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-primary text-[26px]">airline_seat_recline_extra</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Passenger Comfort</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Custom aerodynamically modeled cabs with internal barometric equalization to eliminate ear popping during express travel.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Milestone Timeline -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Chronological Progress</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+            27 Years of Vertical Evolution.
+          </h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">SELECT MILESTONE TO INSPECT SPECS ↓</span>
+</div>
+<!-- Timeline Navigator -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mb-space-md">
+<button class="timeline-tab text-left p-space-md rounded-lg bg-surface-container-high text-tertiary transition-all shadow-sm" id="t-btn-0" onclick="switchTimeline(0)">
+<span class="font-label-code text-label-code block text-tertiary mb-1">CHRONO-01</span>
+<span class="font-headline-md text-headline-md font-bold block text-on-surface">1998</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Founding &amp; Hydraulic Systems</span>
+</button>
+<button class="timeline-tab text-left p-space-md rounded-lg bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container shadow-sm" id="t-btn-1" onclick="switchTimeline(1)">
+<span class="font-label-code text-label-code block text-on-surface-variant mb-1">CHRONO-02</span>
+<span class="font-headline-md text-headline-md font-bold block text-on-surface">2006</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Machine-Room-Less (MRL) Launch</span>
+</button>
+<button class="timeline-tab text-left p-space-md rounded-lg bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container shadow-sm" id="t-btn-2" onclick="switchTimeline(2)">
+<span class="font-label-code text-label-code block text-on-surface-variant mb-1">CHRONO-03</span>
+<span class="font-headline-md text-headline-md font-bold block text-on-surface">2015</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">IoT Smart Fleet Rollout</span>
+</button>
+<button class="timeline-tab text-left p-space-md rounded-lg bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container shadow-sm" id="t-btn-3" onclick="switchTimeline(3)">
+<span class="font-label-code text-label-code block text-on-surface-variant mb-1">CHRONO-04</span>
+<span class="font-headline-md text-headline-md font-bold block text-on-surface">2024</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ultra-High Regen Drive Tech</span>
+</button>
+</div>
+<!-- Timeline Dynamic Display Card -->
+<div class="bg-surface-container p-space-lg lg:p-space-xl rounded-xl shadow-xl transition-all" id="timeline-card">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-highest text-tertiary font-label-code text-label-code" id="t-badge">
+                INCEPTION ERA // 1998
+              </span>
+<span class="font-label-code text-label-code text-on-surface-variant" id="t-location">STUTTGART - BOSTON COLLABORATION</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-on-surface font-semibold" id="t-title">
+              The Genesis of Machine-Grade Precision
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed" id="t-desc">
+              Nimma established its pioneering metallurgical workshop with a compact cohort of 14 lift engineers. We introduced industrial high-load hydraulic platforms that drastically lowered fluid friction, establishing early patents in valve synchronization.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">First Year Deliveries</span>
+<span class="font-label-code text-headline-sm font-bold text-tertiary" id="t-metric-1">42 Units</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">Initial Payload Cap</span>
+<span class="font-label-code text-headline-sm font-bold text-on-surface" id="t-metric-2">3,500 KG</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">Baseline Standard</span>
+<span class="font-label-code text-headline-sm font-bold text-secondary" id="t-metric-3">EN-81 BASE</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-lg flex flex-col justify-between h-full min-h-[220px]">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase">Technical Architecture Note</span>
+<p class="font-label-code text-label-code text-on-surface mt-space-xs leading-relaxed" id="t-tech-note">
+                Initial mechanical patent granted for twin-cylinder pressurized dampening circuits with zero-bleed emergency bypass shutoffs.
+              </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-on-surface-variant font-label-code text-label-code">
+<span>PATENT #4,819,204</span>
+<span class="text-tertiary font-bold">VERIFIED V1.0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership & Senior Engineering Team -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Executive Engineers</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+            Custodians of Kinematic Precision.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Guided by industry authorities across structural physics, software dispatch algorithms, and bespoke architectural aesthetics.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Executive 1: CTO -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="relative h-80 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover object-top" data-alt="Portrait of an experienced male Chief Technology Officer in dark slate turtleneck, confident calm expression, standing in an engineering lab with faint architectural wireframes and elevator motors in soft background blur, crisp studio rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgornJC562gJMP_jp6rIid47SSePN4Uc_d3vWoZm95mL0iH5Q5pmuNcPVPmGguC_ci6HyO8RRM37EQ6LSsBTTnP_xTVcQWZjOklvUG67M8Yu3d0G9WB5pOWpgyoI6sJ1Dhq6xpjhWmLnytSgrvSNODQltRCJUu7r9Rvv2RuSLMZIOmgY__i0RbpT10Bdh_q1nFxSS02JRiXynXpo43DyaNtkItyfK5GX0yI_Bhe8XLgPKT3n29r6Bd"/>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-low via-surface-container-low/75 to-transparent">
+<span class="font-label-code text-label-code text-tertiary">M.Sc. MECHATRONICS • ETH ZÜRICH</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Dr. Henrik Vance</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Chief Technology Officer</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+                22 years designing traction mechanics and magnetic guidance arrays. Holder of 19 global patents in frictionless regenerative brake systems.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/50 p-space-sm rounded font-label-code text-label-code text-on-surface-variant">
+<span>SPECIALTY: Magnetorheological Fluid Dampening</span>
+</div>
+</div>
+</div>
+<!-- Executive 2: Head of Structural Safety -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="relative h-80 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover object-top" data-alt="Professional portrait of a focused female Head of Structural Safety engineer wearing dark technical blazer, neutral clean expression, background showing safety engineering blueprints and laser calibration gauges, soft warm rim highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxy3sQybQpv-XKQQt_Hs2VGRZOOze2pZ8IUvMEIzb86ZjYIYs9MMn7YTm8CiRVmS0Z2aI0IzwKAiv9WlLIErbiUVm1BFBNYcV_sWESYgutF7Z7Y6Kqw-gRSwQjpNMOHj06QPG_PHP-mWwDT7HAvuklsbXsKpEYAi5h9XwWyKqH1_h8nsoN68ZreKEhVZmSADad5VE7jUd57kTW1qbQv-KKT6b-X-TTifg7-KRDROhUmsXw8vOqz8IJ"/>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-low via-surface-container-low/75 to-transparent">
+<span class="font-label-code text-label-code text-tertiary">Ph.D. STRUCTURAL DYNAMICS • MIT</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Elena Rostova, P.E.</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Head of Structural Safety &amp; Compliance</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+                Former technical chair of ISO European Lift Directive committee. Leads our destruct testing labs, high-wind simulations, and seismic hoistway anchoring.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/50 p-space-sm rounded font-label-code text-label-code text-on-surface-variant">
+<span>SPECIALTY: ASME A17.1 Seismic Category E Rigging</span>
+</div>
+</div>
+</div>
+<!-- Executive 3: Senior Lift Architect -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="relative h-80 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover object-top" data-alt="Portrait of senior male architectural designer holding blueprints, thoughtful expression, wearing minimalist charcoal tailored work jacket, modern glass and bronze architectural interior backdrop, refined lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBluYVU0PRlFs4atmiW8Dm4yaJZ3PcaHvb4K5LnEl1W78YVveVb_0OAyz975ldBGKOvdHQzj-zfCHxdzZkG8Cca63ywaHwEdMajP9bqG871lbwm-I19QUhSAE61Cf-f-U-0DEVBbEVmkTE6lz6dWDMJOXoQnOAvojl5NeHevb5uvGcLDROQtEB1s4BVqYS6vud08MvOfk7LdoTH2elhQOKoBc6KHJzn02SWSpy1V3MuKas_XhyidXSw"/>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-low via-surface-container-low/75 to-transparent">
+<span class="font-label-code text-label-code text-tertiary">M.ARCH • AA LONDON</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Julian Mercer, AIA</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Senior Principal Lift Architect</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+                Bridges raw industrial engineering with luxury panoramic and hospitality spatial design. Oversees bespoke cab interiors, lighting, and glass enclosures.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/50 p-space-sm rounded font-label-code text-label-code text-on-surface-variant">
+<span>SPECIALTY: Frameless Panoramic Hoistways</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Certifications & Accreditations -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="bg-surface-container-low p-space-lg lg:p-space-xl rounded-xl shadow-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Audited Worldwide</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+              Accreditations &amp; Global Compliance
+            </h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">Q4 2024 COMPLIANCE AUDIT PASSED: 100%</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- ISO 9001 -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[32px]">verified</span>
+<span class="font-label-code text-label-code text-tertiary">ISO 9001:2015</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Quality Management</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Certified zero-deviation manufacturing workflows and supply chain audits.</p>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant mt-space-md block">CERT: QM-884029-A</span>
+</div>
+<!-- CE Marking -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">policy</span>
+<span class="font-label-code text-label-code text-secondary">DIRECTIVE 2014/33/EU</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">CE Safety Directive</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Full compliance across European Union high-speed commercial standards.</p>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant mt-space-md block">NOTIFIED BODY #0036</span>
+</div>
+<!-- TÜV SÜD -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[32px]">security</span>
+<span class="font-label-code text-label-code text-tertiary">TÜV SÜD</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Safety Component Gear</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Type-tested progressive safety clamps and oil buffers rated to 12.5 m/s.</p>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant mt-space-md block">MARK: TÜV-SUD-GEAR-09</span>
+</div>
+<!-- ASME -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[32px]">engineering</span>
+<span class="font-label-code text-label-code text-primary">ASME A17.1 / CSA B44</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">North American Code</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Approved for multi-zone seismic active deployment and high-rise hoistways.</p>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant mt-space-md block">STD: ASME-B44-REV23</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Architectural Consultation Callout -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="bg-surface-container-high rounded-xl p-space-lg lg:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg relative overflow-hidden shadow-2xl">
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Direct Engineering Consultation</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs font-semibold">
+            Specify Nimma Elevators for Your Next Masterwork.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+            Engage directly with our structural layout architects and hoistway calculation specialists. We deliver CAD, BIM, and dispatch traffic simulations in 48 hours.
+          </p>
+</div>
+<div class="relative z-10 flex flex-wrap gap-space-md shrink-0">
+<a class="px-space-lg py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)] flex items-center gap-space-xs" data-path="contact" href="contact.html">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+            Request Architectural Pack
+          </a>
+<a class="px-space-lg py-space-sm bg-surface-container-lowest text-on-surface font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-surface-container transition-all flex items-center gap-space-xs" data-path="products" href="products.html">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+            Explore Systems Catalog
+          </a>
+</div>
+</div>
+</div>
+</section>
+<script>
+    const timelineData = [
+      {
+        badge: "INCEPTION ERA // 1998",
+        location: "STUTTGART - BOSTON COLLABORATION",
+        title: "The Genesis of Machine-Grade Precision",
+        desc: "Nimma established its pioneering metallurgical workshop with a compact cohort of 14 lift engineers. We introduced industrial high-load hydraulic platforms that drastically lowered fluid friction, establishing early patents in valve synchronization.",
+        metric1: "42 Units",
+        metric2: "3,500 KG",
+        metric3: "EN-81 BASE",
+        note: "Initial mechanical patent granted for twin-cylinder pressurized dampening circuits with zero-bleed emergency bypass shutoffs."
+      },
+      {
+        badge: "ARCHITECTURAL LEAP // 2006",
+        location: "RESEARCH & EXPANSION LABS",
+        title: "Pioneering Machine-Room-Less (MRL) Traction",
+        desc: "By eliminating the bulky rooftop penthouse engine room, Nimma unlocked unprecedented design freedom for architects. We engineered compact gearless permanent magnet motors that mounted flush inside the hoistway shaft head.",
+        metric1: "520+ Units",
+        metric2: "2.5 m/s",
+        metric3: "40% ENERGY CUT",
+        note: "Pioneered high-flux neodymium disc stators capable of continuous duty cycles with 60% smaller physical footprint."
+      },
+      {
+        badge: "TELEMETRY CONNECTIVITY // 2015",
+        location: "GLOBAL MONITORING CENTER",
+        title: "IoT Smart Fleet Rollout & Predictive Servicing",
+        desc: "Nimma connected its global installed base to encrypted predictive telemetry clouds. Real-time vibration sensors and automated door cycle analysis allowed 92% of servicing interventions to occur before any passenger interruption occurred.",
+        metric1: "4,800 Units",
+        metric2: "&lt; 15 min",
+        metric3: "ISO 27001",
+        note: "Deployment of Nimma Telemetry Pulse V1 streaming 120 sensor parameters per car at 10Hz to dispatch nodes."
+      },
+      {
+        badge: "SUSTAINABILITY MATRIX // 2024",
+        location: "ADVANCED PROPULSION LABS",
+        title: "Ultra-High Efficiency Regenerative Micro-Drives",
+        desc: "Commercializing next-generation Silicon-Carbide (SiC) inverters that harvest kinetic energy during down-peak loaded descents and up-peak light ascents, returning 70% of energy back to building busbars with near-unity power factors.",
+        metric1: "14,200+ Units",
+        metric2: "99.98%",
+        metric3: "ZERO NET GRID",
+        note: "SiC high-frequency switching reduces thermal drive losses by 42% while providing near-silent electromagnetic motor harmonics."
+      }
+    ];
+
+    function switchTimeline(index) {
+      const data = timelineData[index];
+      
+      // Update tab styles
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById('t-btn-' + i);
+        if (i === index) {
+          btn.className = "timeline-tab text-left p-space-md rounded-lg bg-surface-container-high text-tertiary transition-all shadow-sm";
+          btn.querySelector('span:first-child').className = "font-label-code text-label-code block text-tertiary mb-1";
+        } else {
+          btn.className = "timeline-tab text-left p-space-md rounded-lg bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container shadow-sm";
+          btn.querySelector('span:first-child').className = "font-label-code text-label-code block text-on-surface-variant mb-1";
+        }
+      }
+
+      // Update card content with smooth opacity transition
+      const card = document.getElementById('timeline-card');
+      card.style.opacity = '0.5';
+      
+      setTimeout(() => {
+        document.getElementById('t-badge').textContent = data.badge;
+        document.getElementById('t-location').textContent = data.location;
+        document.getElementById('t-title').textContent = data.title;
+        document.getElementById('t-desc').textContent = data.desc;
+        document.getElementById('t-metric-1').innerHTML = data.metric1;
+        document.getElementById('t-metric-2').innerHTML = data.metric2;
+        document.getElementById('t-metric-3').innerHTML = data.metric3;
+        document.getElementById('t-tech-note').textContent = data.note;
+        card.style.opacity = '1';
+      }, 150);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1440px] mx-auto px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Nimma Elevator Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBwrauxq8DdMlk3jU8p-KzdS9nrJ3VsICOPJiuP_Rj44xLLByEMcnMXiKqppf-k07Ct6xMi1j80EjlHpYxgR-jPml8Dus5HeIEqdCKkKXczqoSxGx8cg7XzPAiGP5iT02srkBDk6VnznukxhKUiP5ucSexu7tbTFFElbGxWYV-Q-VjAuzHTx9IGSnWTVip8FvHRdge-_MlWErKxMx4bxeeLnUmkuMQky1SSnqcBKAs3kr5GknSQx46rA"/><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Nimma Elevator</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Pioneering precision vertical transit engineering for luxury residential, high-capacity commercial hubs, and industrial facilities worldwide. Built for maximum reliability, speed, and safety.</p><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-tertiary">24/7 Rapid Emergency Response</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">e911_emergency</span><span class="font-label-code text-label-code font-bold text-on-surface">1-800-555-NIMMA • EXT 911</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Navigation</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">Home</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Products</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="about.html">About Us</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="maintenance" href="maintenance.html">Maintenance</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="contact.html">Contact</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Lift Catalog</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Home Lift Series</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Commercial Traction Lift</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Heavy Duty Service Lift</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Hydraulic Freight Systems</a></li><li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Scenic Panoramic Glass Lifts</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Compliance &amp; Specs</span><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span><span class="font-label-code text-label-code text-on-surface">ISO 9001:2015 Certified</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span><span class="font-label-code text-label-code text-on-surface">CE Safety Directive Certified</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span><span class="font-label-code text-label-code text-on-surface">ASME A17.1 / CSA B44</span></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low/50 px-gutter py-space-md rounded-lg"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nimma Elevator Technologies Inc. All rights reserved. Monolithic Precision Systems.</span><div class="flex items-center gap-gutter font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Safety Disclaimers</a></div></div></div></footer><script src="whatsapp-widget.js"></script>
+</body></html>

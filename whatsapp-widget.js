@@ -1,28 +1,28 @@
 /**
- * Nimma Elevator - WhatsApp Deep Link & Quick Action Controller
+ * Nima Elevator - WhatsApp Deep Link & Quick Action Controller
  * Supports standard wa.me, mobile deep linking, prefilled custom messages,
  * and dynamic configuration data extraction.
  */
 
-const NIMMA_WHATSAPP_CONFIG = {
-  phoneNumber: "18005556466", // International format without symbols (e.g. 18005556466 or 919876543210)
-  displayPhone: "+1 (800) 555-NIMMA",
-  businessName: "Nimma Elevator Technologies",
-  defaultMessage: "Hello Nimma Elevator, I would like to inquire about elevator solutions for my project.",
+const NIMA_WHATSAPP_CONFIG = {
+  phoneNumber: "919562835050", // +91 95628 35050
+  displayPhone: "+91 95628 35050",
+  businessName: "Nima Elevator Technologies",
+  defaultMessage: "Hello Nima Elevator, I would like to inquire about elevator solutions for my project.",
   quickInquiries: [
     {
       id: "quote",
       icon: "request_quote",
       title: "Instant Lift Quote",
       desc: "Get fast pricing & lead-time estimate",
-      msg: "Hello Nimma Elevator team, I would like to request an instant price estimate and feasibility consultation for a new lift installation."
+      msg: "Hello Nima Elevator team, I would like to request an instant price estimate and feasibility consultation for a new lift installation."
     },
     {
       id: "cad",
       icon: "architecture",
       title: "Architectural & CAD Specs",
       desc: "Shaft drawings, BIM & compliance models",
-      msg: "Hi Nimma Engineering, please share architectural CAD hoistway specifications and BIM layout files."
+      msg: "Hi Nima Engineering, please share architectural CAD hoistway specifications and BIM layout files."
     },
     {
       id: "maintenance",
@@ -43,16 +43,12 @@ const NIMMA_WHATSAPP_CONFIG = {
 
 // Build Deep Link URL
 function getWhatsAppDeepLink(customMessage, phone) {
-  const targetPhone = (phone || NIMMA_WHATSAPP_CONFIG.phoneNumber).replace(/[^0-9]/g, '');
-  const encodedMsg = encodeURIComponent(customMessage || NIMMA_WHATSAPP_CONFIG.defaultMessage);
-  
-  // Mobile app vs Web fallback compatibility
-  const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  if (isMobile) {
-    return `https://api.whatsapp.com/send?phone=${targetPhone}&text=${encodedMsg}`;
-  } else {
-    return `https://web.whatsapp.com/send?phone=${targetPhone}&text=${encodedMsg}`;
+  let targetPhone = (phone || NIMA_WHATSAPP_CONFIG.phoneNumber).toString().replace(/[^0-9]/g, '');
+  if (targetPhone.length === 10) {
+    targetPhone = '91' + targetPhone;
   }
+  const encodedMsg = encodeURIComponent(customMessage || NIMA_WHATSAPP_CONFIG.defaultMessage);
+  return `https://wa.me/${targetPhone}?text=${encodedMsg}`;
 }
 
 // Direct Open Helper
@@ -63,10 +59,10 @@ function openWhatsAppChat(customMessage, phone) {
 
 // Create and Inject Floating WhatsApp Widget
 function initWhatsAppWidget() {
-  if (document.getElementById('nimma-whatsapp-widget')) return;
+  if (document.getElementById('nima-whatsapp-widget')) return;
 
   const widgetContainer = document.createElement('div');
-  widgetContainer.id = 'nimma-whatsapp-widget';
+  widgetContainer.id = 'nima-whatsapp-widget';
   widgetContainer.className = 'fixed bottom-6 right-6 z-50 flex flex-col items-end font-body-md';
 
   widgetContainer.innerHTML = `
@@ -86,14 +82,14 @@ function initWhatsAppWidget() {
             </div>
             <div>
               <h3 class="font-headline-sm text-body-md font-bold text-on-surface flex items-center gap-1.5">
-                Nimma WhatsApp Desk
+                Nima WhatsApp Desk
               </h3>
               <p class="text-xs text-[#25D366] font-medium flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span> Online • Quick Response
+                <span class="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span> +91 95628 35050 • Online
               </p>
             </div>
           </div>
-          <button id="close-wa-popover" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-highest transition-colors">
+          <button id="close-wa-popover" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-highest transition-colors" aria-label="Close WhatsApp chat">
             <span class="material-symbols-outlined text-[18px]">close</span>
           </button>
         </div>
@@ -103,7 +99,7 @@ function initWhatsAppWidget() {
       <div class="p-3 bg-surface-container max-h-[220px] overflow-y-auto space-y-2 border-b border-outline-variant/30">
         <p class="text-[11px] font-label-caps uppercase tracking-wider text-on-surface-variant px-1">Choose Quick Action</p>
         <div class="grid grid-cols-1 gap-1.5" id="wa-template-list">
-          ${NIMMA_WHATSAPP_CONFIG.quickInquiries.map(item => `
+          ${NIMA_WHATSAPP_CONFIG.quickInquiries.map(item => `
             <button onclick="window.triggerWhatsAppTemplate('${item.id}')" class="w-full text-left p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/30 hover:border-[#25D366]/40 transition-all flex items-start gap-2.5 group">
               <span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-[#25D366] transition-colors shrink-0 mt-0.5">${item.icon}</span>
               <div class="flex flex-col flex-1 min-w-0">
@@ -124,7 +120,7 @@ function initWhatsAppWidget() {
           <textarea id="wa-custom-input" rows="2" placeholder="Type your elevator inquiry or requirement..." class="w-full bg-surface-container text-xs text-on-surface placeholder:text-on-surface-variant/70 p-2.5 rounded-xl border border-outline-variant/40 focus:border-[#25D366] focus:ring-1 focus:ring-[#25D366] outline-none resize-none transition-all"></textarea>
         </div>
         <div class="flex items-center justify-between gap-2">
-          <span class="text-[10px] font-label-code text-on-surface-variant">Direct encrypted WhatsApp chat</span>
+          <span class="text-[10px] font-label-code text-on-surface-variant">+91 95628 35050 Direct Encrypted Chat</span>
           <button id="wa-send-custom-btn" class="px-4 py-2 bg-[#25D366] hover:bg-[#20ba59] text-[#0b1f14] font-headline-sm text-xs font-bold rounded-lg shadow-md hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] transition-all flex items-center gap-1.5 shrink-0">
             <span>Send</span>
             <span class="material-symbols-outlined text-[16px]">send</span>
@@ -134,7 +130,7 @@ function initWhatsAppWidget() {
     </div>
 
     <!-- Floating Toggle Button -->
-    <button id="wa-toggle-btn" class="relative group flex items-center gap-2.5 px-4 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-[0_4px_25px_rgba(37,211,102,0.45)] hover:shadow-[0_6px_30px_rgba(37,211,102,0.6)] hover:scale-105 active:scale-95 transition-all duration-300">
+    <button id="wa-toggle-btn" class="relative group flex items-center gap-2.5 px-4 py-3 bg-[#25D366] hover:bg-[#20ba59] text-[#0b1f14] rounded-full shadow-[0_4px_25px_rgba(37,211,102,0.45)] hover:shadow-[0_6px_30px_rgba(37,211,102,0.6)] hover:scale-105 active:scale-95 transition-all duration-300" aria-label="Open WhatsApp Chat">
       <!-- Glow Ring -->
       <span class="absolute -inset-1 rounded-full bg-[#25D366]/30 animate-pulse pointer-events-none"></span>
       
@@ -186,7 +182,7 @@ function initWhatsAppWidget() {
   });
 
   sendCustomBtn.addEventListener('click', () => {
-    const text = customInput.value.trim() || NIMMA_WHATSAPP_CONFIG.defaultMessage;
+    const text = customInput.value.trim() || NIMA_WHATSAPP_CONFIG.defaultMessage;
     openWhatsAppChat(text);
   });
 
@@ -207,15 +203,20 @@ function initWhatsAppWidget() {
 
 // Global Template Trigger
 window.triggerWhatsAppTemplate = function(templateId) {
-  const item = NIMMA_WHATSAPP_CONFIG.quickInquiries.find(t => t.id === templateId);
+  const item = NIMA_WHATSAPP_CONFIG.quickInquiries.find(t => t.id === templateId);
   if (item) {
     openWhatsAppChat(item.msg);
+  } else {
+    openWhatsAppChat(NIMA_WHATSAPP_CONFIG.defaultMessage);
   }
 };
 
+// Global direct chat
+window.openWhatsAppChat = openWhatsAppChat;
+
 // Direct Product Inquiry Helper
 window.inquireProductOnWhatsApp = function(productName, capacity, speed) {
-  let msg = `Hi Nimma Elevator, I would like to inquire about the *${productName}*.`;
+  let msg = `Hi Nima Elevator, I would like to inquire about the *${productName}*.`;
   if (capacity) msg += ` Capacity: ${capacity}.`;
   if (speed) msg += ` Speed: ${speed}.`;
   msg += ` Please share availability, technical brochure, and price quotation.`;
@@ -224,28 +225,28 @@ window.inquireProductOnWhatsApp = function(productName, capacity, speed) {
 
 // Interactive Lift Configurator to WhatsApp
 window.sendConfigurationToWhatsApp = function(building, capacity, speed, model, shaft) {
-  const msg = `*New Lift Configuration Inquiry*\n` +
+  const msg = `*Nima Elevator - Custom Lift Configuration Inquiry*\n` +
               `🏢 Building Type: ${building}\n` +
               `👥 Passenger Capacity: ${capacity}\n` +
               `⚡ Hoist Velocity: ${speed}\n` +
               `⚙️ Recommended Model: ${model || 'Standard'}\n` +
               `📐 Estimated Shaft: ${shaft || 'Custom'}\n\n` +
-              `Please provide architectural shaft drawings, CAD feasibility review, and estimated quotation.`;
+              `Please provide architectural shaft drawings, CAD feasibility review, and estimated quotation for this project.`;
   openWhatsAppChat(msg);
 };
 
 // Contact / Quote Form Submit to WhatsApp
 window.sendQuoteFormToWhatsApp = function(formData) {
-  let msg = `*Nimma Elevator - New Quote Request*\n`;
+  let msg = `*Nima Elevator - New Project Quote Request*\n`;
   if (formData.projectType) msg += `🏢 Project: ${formData.projectType}\n`;
   if (formData.liftType) msg += `⚙️ Lift Model: ${formData.liftType}\n`;
   if (formData.floors) msg += `📶 Floors/Stops: ${formData.floors}\n`;
-  if (formData.capacity) msg += `👥 Capacity: ${formData.capacity}\n`;
+  if (formData.capacity) msg += `👥 Capacity / Finish: ${formData.capacity}\n`;
   if (formData.speed) msg += `⚡ Speed: ${formData.speed}\n`;
-  if (formData.name) msg += `👤 Client: ${formData.name}\n`;
-  if (formData.phone) msg += `📞 Phone: ${formData.phone}\n`;
-  if (formData.location) msg += `📍 Location: ${formData.location}\n`;
-  if (formData.notes) msg += `📝 Notes: ${formData.notes}\n`;
+  if (formData.name) msg += `👤 Client Name: ${formData.name}\n`;
+  if (formData.phone) msg += `📞 Contact: ${formData.phone}\n`;
+  if (formData.location) msg += `📍 Project Location: ${formData.location}\n`;
+  if (formData.notes) msg += `📝 Notes / Specs: ${formData.notes}\n`;
 
   openWhatsAppChat(msg);
 };

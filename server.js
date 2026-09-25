@@ -88,8 +88,13 @@ function resolveFilePath(reqUrl) {
     return null;
   }
 
-  // Check route aliases first (case insensitive)
+  // Handle direct WhatsApp shortcut
   const lowerUrl = cleanUrl.toLowerCase().replace(/\/+$/, '') || '/';
+  if (lowerUrl === '/whatsapp' || lowerUrl === '/chat') {
+    return 'WHATSAPP_REDIRECT';
+  }
+
+  // Check route aliases first (case insensitive)
   if (ROUTE_ALIASES[lowerUrl]) {
     cleanUrl = ROUTE_ALIASES[lowerUrl];
   }
@@ -150,6 +155,12 @@ const server = http.createServer((req, res) => {
 
   const resolved = resolveFilePath(req.url);
 
+  if (resolved === 'WHATSAPP_REDIRECT') {
+    res.writeHead(302, { 'Location': 'https://wa.me/919562835050' });
+    res.end();
+    return;
+  }
+
   if (resolved) {
     serveFile(res, resolved);
   } else {
@@ -159,13 +170,15 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`=========================================`);
-  console.log(` Nimma Elevator Server running at:`);
+  console.log(` Nima Elevator Server running at:`);
   console.log(` > http://localhost:${PORT}/`);
+  console.log(` WhatsApp Contact: +91 95628 35050`);
   console.log(` Routes supported:`);
   console.log(`  - / (Home)`);
   console.log(`  - /products or /products.html`);
   console.log(`  - /about or /about.html`);
   console.log(`  - /maintenance or /maintenance.html`);
   console.log(`  - /contact or /contact.html`);
+  console.log(`  - /whatsapp (Direct wa.me link)`);
   console.log(`=========================================`);
 });

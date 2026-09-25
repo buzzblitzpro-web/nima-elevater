@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="web_standard" name="shell-type"/>
-  <title>404 - Floor Not Found | Nimma Elevator Technologies</title>
+  <title>404 - Floor Not Found | Nima Elevator Technologies</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -131,9 +131,9 @@
   <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-20 max-w-[1440px] mx-auto px-gutter flex items-center justify-between gap-gutter">
       <a href="index.html" class="flex items-center gap-space-md shrink-0 hover:opacity-90 transition-opacity">
-        <img alt="Nimma Elevator Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBwrauxq8DdMlk3jU8p-KzdS9nrJ3VsICOPJiuP_Rj44xLLByEMcnMXiKqppf-k07Ct6xMi1j80EjlHpYxgR-jPml8Dus5HeIEqdCKkKXczqoSxGx8cg7XzPAiGP5iT02srkBDk6VnznukxhKUiP5ucSexu7tbTFFElbGxWYV-Q-VjAuzHTx9IGSnWTVip8FvHRdge-_MlWErKxMx4bxeeLnUmkuMQky1SSnqcBKAs3kr5GknSQx46rA"/>
+        <img alt="Nima Elevator Logo" class="h-8 w-auto object-contain" src="logo.svg"/>
         <div class="flex flex-col">
-          <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Nimma Elevator</span>
+          <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Nima Elevator</span>
           <span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Architectural Mobility</span>
         </div>
       </a>
@@ -150,10 +150,11 @@
         <a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="maintenance" href="maintenance.html">Maintenance</a>
         <a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="contact" href="contact.html">Contact</a>
       </nav>
-      <div class="flex items-center gap-space-md shrink-0">
-        <a class="hidden 2xl:flex items-center gap-space-xs text-on-surface-variant hover:text-tertiary transition-colors" href="tel:18005556466">
+      <div class="flex items-center gap-space-sm sm:gap-space-md shrink-0">
+<button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" aria-label="Toggle navigation menu"><span class="material-symbols-outlined text-[24px]">menu</span></button>
+        <a class="hidden 2xl:flex items-center gap-space-xs text-on-surface-variant hover:text-tertiary transition-colors" href="tel:+919562835050">
           <span class="material-symbols-outlined text-[18px] text-tertiary">support_agent</span>
-          <span class="font-label-code text-label-code text-on-surface tracking-wider">+1 (800) 555-NIMMA</span>
+          <span class="font-label-code text-label-code text-on-surface tracking-wider">+91 95628 35050</span>
         </a>
         <a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)]" data-path="contact" href="contact.html">Get a Free Quote</a>
         <button onclick="window.triggerWhatsAppTemplate('quote')" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] text-xs font-headline-sm font-semibold rounded-lg transition-all" title="Direct WhatsApp Inquiries">
@@ -163,7 +164,28 @@
         <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
       </div>
     </div>
-  </header>
+  
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low border-t border-outline-variant/30 px-gutter py-4 flex flex-col gap-3 shadow-2xl">
+      <nav class="flex flex-col gap-2 font-headline-sm text-body-md">
+        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="index.html">Home</a>
+        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="products.html">Products &amp; Models</a>
+        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="about.html">About Nima</a>
+        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="maintenance.html">24/7 Maintenance &amp; AMC</a>
+        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="contact.html">Contact &amp; Quote</a>
+      </nav>
+      <div class="pt-2 border-t border-outline-variant/30 flex flex-col gap-2">
+        <a href="tel:+919562835050" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container text-on-surface font-label-code text-xs">
+          <span class="material-symbols-outlined text-tertiary text-[18px]">phone</span>
+          <span>Call: +91 95628 35050</span>
+        </a>
+        <button onclick="window.triggerWhatsAppTemplate('quote')" class="flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-[#25D366] text-[#0b1f14] font-headline-sm text-xs font-bold shadow-md">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
+          <span>WhatsApp (+91 95628 35050)</span>
+        </button>
+      </div>
+    </div>
+</header>
 
   <!-- Main 404 Hero Section -->
   <main class="w-full pt-28 pb-16 px-gutter flex-1 flex items-center justify-center relative overflow-hidden">
@@ -210,7 +232,7 @@
           </div>
           <div>
             <div class="font-headline-sm text-sm font-bold text-on-surface">Home Page</div>
-            <div class="text-xs text-on-surface-variant">Nimma mobility overview</div>
+            <div class="text-xs text-on-surface-variant">Nima mobility overview</div>
           </div>
         </a>
 
@@ -265,7 +287,7 @@
   <!-- Footer -->
   <footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20">
     <div class="max-w-[1440px] mx-auto px-gutter py-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
-      <span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nimma Elevator Technologies Inc. All rights reserved. Monolithic Precision Systems.</span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nima Elevator Technologies Inc. All rights reserved. Monolithic Precision Systems.</span>
       <div class="flex items-center gap-gutter font-body-sm text-body-sm">
         <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Home</a>
         <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="products.html">Products</a>
@@ -277,5 +299,15 @@
   </footer>
 
   <script src="whatsapp-widget.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+      }
+    });
+  </script>
 </body>
 </html>

@@ -131,13 +131,13 @@
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between">
   <!-- Header -->
   <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.4)] border-b border-outline-variant/30">
-    <div class="h-20 max-w-[1440px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+    <div class="h-20 max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-gutter flex items-center justify-between gap-2 sm:gap-space-md">
       <!-- Logo & Brand Hub -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group">
-        <img alt="Nima Elevators Logo" class="h-11 w-11 rounded-full object-contain shadow-[0_0_16px_rgba(255,185,95,0.25)] border border-outline-variant/30 group-hover:scale-105 transition-transform" src="logo.svg"/>
-        <div class="flex flex-col">
-          <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface group-hover:text-tertiary transition-colors leading-tight">Nima Elevators</span>
-          <span class="font-label-caps text-[10px] text-tertiary uppercase tracking-widest">Kerala • Architectural Mobility</span>
+      <a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0 group min-w-0">
+        <img alt="Nima Elevators Logo" class="h-10 w-10 sm:h-11 sm:w-11 shrink-0 flex-shrink-0 min-w-[40px] rounded-full object-contain shadow-[0_0_16px_rgba(255,185,95,0.25)] border border-outline-variant/30 group-hover:scale-105 transition-transform bg-white" src="logo.svg"/>
+        <div class="flex flex-col min-w-0">
+          <span class="font-headline-sm text-sm sm:text-headline-sm font-bold tracking-tight text-on-surface group-hover:text-tertiary transition-colors truncate leading-tight">Nima Elevators</span>
+          <span class="font-label-caps text-[9px] sm:text-[10px] text-tertiary uppercase tracking-wider truncate">Kerala • Architectural Mobility</span>
         </div>
       </a>
 
@@ -218,7 +218,7 @@
         </a>
 
         <!-- WhatsApp Header Button -->
-        <a href="https://wa.me/919562835050?text=Hello%20Nima%20Elevator%2C%20I%20would%20like%20to%20request%20an%20instant%20price%20estimate%20and%20feasibility%20consultation%20for%20a%20new%20lift%20installation." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] text-xs font-headline-sm font-semibold rounded-lg transition-all shadow-sm" title="Direct WhatsApp Inquiries (+91 95628 35050)">
+        <a href="https://wa.me/919562835050?text=Hello%20Nima%20Elevator%2C%20I%20would%20like%20to%20request%20an%20instant%20price%20estimate%20and%20feasibility%20consultation%20for%20a%20new%20lift%20installation." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] text-xs font-headline-sm font-semibold rounded-lg transition-all shadow-sm" title="Direct WhatsApp Inquiries (+91 95628 35050)">
           <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
           <span class="hidden sm:inline">WhatsApp</span>
         </a>
@@ -230,14 +230,22 @@
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" aria-label="Toggle navigation menu">
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors shrink-0" aria-label="Toggle navigation menu">
           <span class="material-symbols-outlined text-[24px]">menu</span>
         </button>
       </div>
     </div>
 
     <!-- Mobile Drawer Navigation -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low/95 backdrop-blur-2xl border-t border-outline-variant/30 px-gutter py-4 flex flex-col gap-3 shadow-2xl">
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low/95 backdrop-blur-2xl border-t border-outline-variant/30 px-4 py-4 flex flex-col gap-3 shadow-2xl">
+      <!-- Brand Header in Drawer -->
+      <a href="index.html" class="flex items-center gap-3 p-3 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-tertiary/40 transition-colors">
+        <img alt="Nima Elevators Logo" class="h-11 w-11 shrink-0 rounded-full object-contain shadow-md bg-white border border-outline-variant/30" src="logo.svg"/>
+        <div class="flex flex-col min-w-0">
+          <span class="font-headline-sm text-base font-bold text-on-surface">Nima Elevators</span>
+          <span class="font-label-caps text-[10px] text-tertiary uppercase tracking-widest">Kerala • Architectural Mobility</span>
+        </div>
+      </a>
       <nav class="flex flex-col gap-1.5 font-headline-sm text-body-md" aria-label="Mobile Navigation">
         <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="index.html">
           <span class="material-symbols-outlined text-[20px]">home</span>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Golden Yellow Gradient -->
+    <linearGradient id="nimaGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7BA2A"/>
+      <stop offset="50%" stop-color="#EAA61E"/>
+      <stop offset="100%" stop-color="#DE9310"/>
+    </linearGradient>
+
+    <!-- Royal Indigo Blue Gradient -->
+    <linearGradient id="nimaBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3448A4"/>
+      <stop offset="100%" stop-color="#26388C"/>
+    </linearGradient>
+
+    <!-- Central Emblem Circle: Center (400, 240), Radius 155 -->
+    <clipPath id="emblemClip">
+      <circle cx="400" cy="240" r="155"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer White Circular Badge -->
+  <circle cx="400" cy="400" r="392" fill="#FFFFFF"/>
+
+  <!-- Central Symbol Group -->
+  <g id="nima-symbol">
+    <g clip-path="url(#emblemClip)">
+      <!-- Top Blue Base -->
+      <rect x="200" y="60" width="400" height="380" fill="url(#nimaBlue)"/>
+
+      <!-- Bottom Golden Yellow Base -->
+      <path d="M 230,275
+               C 255,270 285,235 335,215
+               C 370,200 395,270 430,290
+               C 465,308 495,255 528,235
+               C 545,225 560,230 575,235
+               L 575,420 L 230,420 Z" 
+            fill="url(#nimaGold)"/>
+
+      <!-- Dynamic White 'N' Ribbon Wave -->
+      <path d="M 238,276
+               C 246,252 280,188 338,188
+               C 378,188 398,260 430,265
+               C 458,268 488,210 528,210
+               C 548,210 564,222 570,232
+               C 555,238 538,240 520,235
+               C 485,226 460,292 430,292
+               C 392,292 370,218 338,218
+               C 292,218 265,270 244,295
+               C 240,288 238,282 238,276 Z" 
+            fill="#FFFFFF"/>
+
+      <!-- Lower-Left Feather Flairs -->
+      <path d="M 240,285
+               C 248,268 262,255 278,255
+               C 264,266 254,282 248,304
+               C 244,296 241,290 240,285 Z" 
+            fill="#FFFFFF"/>
+
+      <path d="M 252,300
+               C 262,284 276,275 292,275
+               C 278,286 268,302 262,318
+               C 257,310 254,305 252,300 Z" 
+            fill="#FFFFFF"/>
+
+      <!-- Upper-Right Feather Flairs -->
+      <path d="M 570,232
+               C 552,205 530,202 504,210
+               C 530,206 554,218 566,240
+               C 568,236 570,234 570,232 Z" 
+            fill="#FFFFFF"/>
+
+      <path d="M 548,218
+               C 532,195 514,195 490,202
+               C 514,198 534,208 545,226
+               C 547,222 548,219 548,218 Z" 
+            fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Typography: NIMA -->
+  <text x="400" y="520" 
+        text-anchor="middle" 
+        font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', sans-serif" 
+        font-weight="900" 
+        font-size="145" 
+        fill="#26388C" 
+        letter-spacing="5">NIMA</text>
+
+  <!-- Typography: ELEVATORS -->
+  <text x="400" y="610" 
+        text-anchor="middle" 
+        font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', sans-serif" 
+        font-weight="900" 
+        font-size="64" 
+        fill="#DB9816" 
+        letter-spacing="6">ELEVATORS</text>
+</svg>

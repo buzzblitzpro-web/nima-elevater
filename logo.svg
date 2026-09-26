@@ -1,11 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
-  <rect width="46" height="46" x="7" y="7" rx="10" fill="#0F172A" stroke="#334155" stroke-width="2"/>
-  <!-- Elevator Shaft & Up/Down Arrows Symbol -->
-  <path d="M22 35L30 22L38 35H22Z" fill="#F59E0B"/>
-  <path d="M25 38H35V42H25V38Z" fill="#94A3B8"/>
-  <rect x="15" y="14" width="3" height="32" rx="1.5" fill="#F59E0B" fill-opacity="0.4"/>
-  <rect x="42" y="14" width="3" height="32" rx="1.5" fill="#F59E0B" fill-opacity="0.4"/>
-  <!-- Typography -->
-  <text x="64" y="32" fill="#F8FAFC" font-family="Outfit, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">NIMA</text>
-  <text x="64" y="46" fill="#F59E0B" font-family="Outfit, sans-serif" font-size="11" font-weight="600" letter-spacing="3.5">ELEVATOR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Golden Yellow Gradient for the Lower Globe Hemisphere -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C432"/>
+      <stop offset="45%" stop-color="#EDB022"/>
+      <stop offset="100%" stop-color="#D98E11"/>
+    </linearGradient>
+
+    <!-- Royal Blue Color Definition -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D439B"/>
+      <stop offset="100%" stop-color="#22337E"/>
+    </linearGradient>
+
+    <!-- Clip Path for the Central Emblem Circle -->
+    <clipPath id="emblemCircle">
+      <circle cx="250" cy="180" r="92"/>
+    </clipPath>
+  </defs>
+
+  <!-- Clean White Circular Badge Container -->
+  <circle cx="250" cy="250" r="240" fill="#FFFFFF"/>
+
+  <!-- ==================== CENTRAL EMBLEM ==================== -->
+  <g clip-path="url(#emblemCircle)">
+    <!-- Upper Royal Blue Hemisphere Base -->
+    <rect x="140" y="70" width="220" height="220" fill="url(#blueGrad)"/>
+
+    <!-- Lower Golden Amber Hemisphere with Dynamic Wave Crest -->
+    <path d="M 140,180 
+             C 160,200 180,215 205,190 
+             C 225,168 238,135 252,135 
+             C 268,135 282,175 305,190 
+             C 325,202 345,175 360,165 
+             L 360,280 L 140,280 Z" 
+          fill="url(#goldGrad)"/>
+
+    <!-- Dynamic Stylized White 'N' Wave / Ribbon -->
+    <path d="M 148,185 
+             C 158,198 172,210 195,195 
+             C 215,180 230,140 252,140 
+             C 272,140 285,178 308,185 
+             C 324,190 338,175 352,150
+             C 342,168 328,172 314,168
+             C 292,160 278,122 252,122
+             C 228,122 212,162 192,175
+             C 178,185 162,180 148,185 Z" 
+          fill="#FFFFFF"/>
+
+    <!-- Left Dynamic Wing Accent -->
+    <path d="M 152,178 
+             C 158,162 170,152 182,152 
+             C 172,160 165,172 160,186 
+             C 155,182 153,180 152,178 Z" 
+          fill="#FFFFFF"/>
+
+    <!-- Right Dynamic Wing Accent -->
+    <path d="M 345,152 
+             C 335,142 320,140 308,145 
+             C 322,145 334,152 342,166 
+             C 344,160 345,155 345,152 Z" 
+          fill="url(#goldGrad)"/>
+    
+    <path d="M 348,148 
+             C 336,136 322,136 308,142 
+             C 324,140 338,148 346,162 
+             C 347,156 348,152 348,148 Z" 
+          fill="#FFFFFF"/>
+  </g>
+
+  <!-- ==================== TYPOGRAPHY ==================== -->
+  <!-- "NIMA" in Bold Royal Blue -->
+  <g fill="#243788">
+    <text x="250" y="348" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Montserrat', 'Arial Black', sans-serif" 
+          font-weight="900" 
+          font-size="78" 
+          letter-spacing="1.5">NIMA</text>
+  </g>
+
+  <!-- "ELEVATORS" in Bold Golden Yellow -->
+  <g fill="#DE9718">
+    <text x="250" y="396" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Montserrat', 'Arial Black', sans-serif" 
+          font-weight="800" 
+          font-size="37" 
+          letter-spacing="2.5">ELEVATORS</text>
+  </g>
 </svg>

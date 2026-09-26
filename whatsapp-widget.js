@@ -7,36 +7,36 @@
 const NIMA_WHATSAPP_CONFIG = {
   phoneNumber: "919562835050", // +91 95628 35050
   displayPhone: "+91 95628 35050",
-  businessName: "Nima Elevator Technologies",
-  defaultMessage: "Hello Nima Elevator, I would like to inquire about elevator solutions for my project.",
+  businessName: "Nima Elevator Technologies (Kerala)",
+  defaultMessage: "Hello Nima Elevator, I would like to inquire about elevator solutions for my Kerala project.",
   quickInquiries: [
     {
       id: "quote",
       icon: "request_quote",
-      title: "Instant Lift Quote",
-      desc: "Get fast pricing & lead-time estimate",
-      msg: "Hello Nima Elevator team, I would like to request an instant price estimate and feasibility consultation for a new lift installation."
+      title: "Instant Kerala Lift Quote",
+      desc: "Get fast pricing & site feasibility in ₹ Lakhs",
+      msg: "Hello Nima Elevator team, I would like to request an instant price estimate and feasibility consultation for a new lift installation in Kerala."
     },
     {
       id: "cad",
       icon: "architecture",
       title: "Architectural & CAD Specs",
-      desc: "Shaft drawings, BIM & compliance models",
-      msg: "Hi Nima Engineering, please share architectural CAD hoistway specifications and BIM layout files."
+      desc: "Shaft drawings, BIS IS 14665 & BIM models",
+      msg: "Hi Nima Engineering, please share architectural CAD hoistway specifications, BIS IS 14665 compliance details, and BIM layout files."
     },
     {
       id: "maintenance",
       icon: "build_circle",
-      title: "AMC & Service Maintenance",
-      desc: "Maintenance contracts & preventive health checks",
-      msg: "Hello, I am interested in your Annual Maintenance Contracts (AMC) and predictive IoT telemetry service."
+      title: "Kerala AMC & Maintenance",
+      desc: "24/7 contracts & preventive health checks",
+      msg: "Hello, I am interested in your Kerala Annual Maintenance Contracts (AMC) and 24/7 breakdown dispatch service."
     },
     {
       id: "emergency",
       icon: "e911_emergency",
       title: "24/7 Emergency Dispatch",
-      desc: "Priority breakdown & rescue service",
-      msg: "URGENT: Requesting immediate elevator breakdown assistance & emergency technician dispatch."
+      desc: "Priority breakdown & rescue across Kerala",
+      msg: "URGENT: Requesting immediate elevator breakdown assistance & emergency technician dispatch in Kerala."
     }
   ]
 };

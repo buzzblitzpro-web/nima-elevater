@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C432"/>
+      <stop offset="50%" stop-color="#EDB022"/>
+      <stop offset="100%" stop-color="#D98E11"/>
+    </linearGradient>
+    <linearGradient id="favBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D439B"/>
+      <stop offset="100%" stop-color="#22337E"/>
+    </linearGradient>
+    <clipPath id="favCircle">
+      <circle cx="250" cy="180" r="92"/>
+    </clipPath>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#FFFFFF"/>
+  <g clip-path="url(#favCircle)">
+    <rect x="140" y="70" width="220" height="220" fill="url(#favBlue)"/>
+    <path d="M 140,180 C 160,200 180,215 205,190 C 225,168 238,135 252,135 C 268,135 282,175 305,190 C 325,202 345,175 360,165 L 360,280 L 140,280 Z" fill="url(#favGold)"/>
+    <path d="M 148,185 C 158,198 172,210 195,195 C 215,180 230,140 252,140 C 272,140 285,178 308,185 C 324,190 338,175 352,150 C 342,168 328,172 314,168 C 292,160 278,122 252,122 C 228,122 212,162 192,175 C 178,185 162,180 148,185 Z" fill="#FFFFFF"/>
+    <path d="M 152,178 C 158,162 170,152 182,152 C 172,160 165,172 160,186 C 155,182 153,180 152,178 Z" fill="#FFFFFF"/>
+    <path d="M 348,148 C 336,136 322,136 308,142 C 324,140 338,148 346,162 C 347,156 348,152 348,148 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="250" y="348" text-anchor="middle" font-family="'Outfit', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="78" fill="#243788" letter-spacing="1.5">NIMA</text>
+  <text x="250" y="396" text-anchor="middle" font-family="'Outfit', 'Montserrat', 'Arial Black', sans-serif" font-weight="800" font-size="37" fill="#DE9718" letter-spacing="2.5">ELEVATORS</text>
+</svg>

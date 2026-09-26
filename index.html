@@ -4,8 +4,10 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="web_standard" name="shell-type"/>
-  <title>Nima Elevator | Architectural &amp; High-Speed Vertical Mobility Solutions</title>
-  <meta name="description" content="Nima Elevator pioneers precision vertical transit engineering for luxury residential villas, high-capacity commercial hubs, and industrial facilities worldwide. WhatsApp / Hotline: +91 95628 35050."/>
+  <title>Nima Elevator | Kerala's Leading Architectural &amp; Home Lift Solutions</title>
+  <meta name="description" content="Nima Elevator - Kerala's premier vertical transit and home lift engineering specialists. Serving Kochi, Trivandrum, Calicut, Thrissur, Kottayam &amp; all 14 districts. 24/7 AMC &amp; WhatsApp: +91 95628 35050."/>
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
   
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -132,40 +134,91 @@
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen">
   <!-- Header -->
-  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-outline-variant/20">
-    <div class="h-20 max-w-[1440px] mx-auto px-gutter flex items-center justify-between gap-gutter">
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-space-md shrink-0 hover:opacity-90 transition-opacity">
-        <img alt="Nima Elevator Logo" class="h-9 w-auto object-contain" src="logo.svg"/>
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.4)] border-b border-outline-variant/30">
+    <div class="h-20 max-w-[1440px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+      <!-- Logo & Brand Hub -->
+      <a href="index.html" class="flex items-center gap-space-sm sm:gap-space-md shrink-0 hover:opacity-95 transition-all group">
+        <img alt="Nima Elevators Logo" class="h-11 w-11 rounded-full object-contain shadow-[0_0_16px_rgba(255,185,95,0.25)] border border-outline-variant/30 group-hover:scale-105 transition-transform" src="logo.svg"/>
         <div class="flex flex-col">
-          <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Nima Elevator</span>
-          <span class="font-label-caps text-[10px] text-tertiary uppercase tracking-widest">Architectural Mobility</span>
+          <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface group-hover:text-tertiary transition-colors">Nima Elevators</span>
+          <span class="font-label-caps text-[10px] text-tertiary uppercase tracking-widest">Kerala • Architectural Mobility</span>
         </div>
       </a>
 
-      <!-- Search Bar -->
-      <div class="hidden xl:flex items-center flex-1 max-w-md mx-space-sm">
-        <div class="relative w-full">
-          <span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
-          <input id="header-search-input" class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-space-md py-space-sm rounded-lg border border-outline-variant/30 focus:outline-none focus:border-tertiary transition-all" placeholder="Search lifts, specs, models, services..." type="text"/>
-        </div>
-      </div>
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-1.5 xl:gap-2 font-headline-sm text-body-sm" aria-label="Main Navigation">
+        <!-- Home (Active) -->
+        <a aria-current="page" href="index.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-tertiary/15 text-tertiary font-semibold border border-tertiary/30 shadow-[0_0_12px_rgba(255,185,95,0.15)]">
+          <span class="material-symbols-outlined text-[18px]">home</span>
+          <span>Home</span>
+        </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-tertiary font-medium relative after:content-[''] after:absolute after:bottom-[-26px] after:left-0 after:right-0 after:h-[2px] after:bg-tertiary">
-        <a aria-current="page" class="transition-colors text-tertiary font-medium relative after:content-[''] after:absolute after:bottom-[-26px] after:left-0 after:right-0 after:h-[2px] after:bg-tertiary" data-path="home" href="index.html">Home</a>
-        <a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="products" href="products.html">Products</a>
-        <a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="about-us" href="about.html">About Us</a>
-        <a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="maintenance" href="maintenance.html">Maintenance</a>
-        <a class="text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="contact" href="contact.html">Contact</a>
+        <!-- Products & Models with Dropdown -->
+        <div class="relative group">
+          <a href="products.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container/70 transition-colors">
+            <span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+            <span>Products &amp; Models</span>
+            <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+          </a>
+          <!-- Dropdown Menu -->
+          <div class="absolute top-full left-0 pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-1 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-50">
+            <div class="bg-surface-container-low/95 backdrop-blur-2xl rounded-xl border border-outline-variant/30 shadow-[0_12px_36px_rgba(0,0,0,0.5)] p-2 flex flex-col gap-1">
+              <a href="products.html#section-home" class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-surface-container transition-colors group/item">
+                <span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">cottage</span>
+                <div class="flex flex-col">
+                  <span class="text-on-surface font-semibold text-xs group-hover/item:text-tertiary transition-colors">Architectural Home Lifts</span>
+                  <span class="text-on-surface-variant text-[11px] leading-tight">0-Pit &amp; glass capsules for Kerala villas</span>
+                </div>
+              </a>
+              <a href="products.html#section-commercial" class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-surface-container transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">apartment</span>
+                <div class="flex flex-col">
+                  <span class="text-on-surface font-semibold text-xs group-hover/item:text-tertiary transition-colors">Commercial Passenger Cores</span>
+                  <span class="text-on-surface-variant text-[11px] leading-tight">High-speed gearless transit for IT parks &amp; retail</span>
+                </div>
+              </a>
+              <a href="products.html#section-service" class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-surface-container transition-colors group/item">
+                <span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">precision_manufacturing</span>
+                <div class="flex flex-col">
+                  <span class="text-on-surface font-semibold text-xs group-hover/item:text-tertiary transition-colors">Freight &amp; Heavy Cargo</span>
+                  <span class="text-on-surface-variant text-[11px] leading-tight">Hospital stretchers &amp; industrial hydraulic lifts</span>
+                </div>
+              </a>
+              <div class="border-t border-outline-variant/30 mt-1 pt-1">
+                <a href="products.html" class="flex items-center justify-between p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container text-xs font-semibold text-tertiary transition-colors">
+                  <span>Browse All 9 Elevator Models</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Us -->
+        <a href="about.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container/70 transition-colors">
+          <span class="material-symbols-outlined text-[18px]">domain</span>
+          <span>About Us</span>
+        </a>
+
+        <!-- Maintenance & AMC -->
+        <a href="maintenance.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container/70 transition-colors">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          <span>24/7 Maintenance</span>
+        </a>
+
+        <!-- Contact & Quote -->
+        <a href="contact.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container/70 transition-colors">
+          <span class="material-symbols-outlined text-[18px]">calculate</span>
+          <span>Contact &amp; Quote</span>
+        </a>
       </nav>
 
-      <!-- Action Buttons -->
-      <div class="flex items-center gap-space-sm sm:gap-space-md shrink-0">
+      <!-- Action Buttons & Quick CTAs -->
+      <div class="flex items-center gap-space-xs sm:gap-space-sm shrink-0">
         <!-- Direct Phone Link -->
-        <a class="hidden 2xl:flex items-center gap-space-xs text-on-surface-variant hover:text-tertiary transition-colors" href="tel:+919562835050" title="Direct Phone / Hotline">
+        <a class="hidden 2xl:flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors px-2 py-1 rounded-lg hover:bg-surface-container" href="tel:+919562835050" title="Direct Phone / Kerala Dispatch">
           <span class="material-symbols-outlined text-[18px] text-tertiary">support_agent</span>
-          <span class="font-label-code text-label-code text-on-surface tracking-wider">+91 95628 35050</span>
+          <span class="font-label-code text-xs text-on-surface font-medium tracking-wider">+91 95628 35050</span>
         </a>
 
         <!-- WhatsApp Header Button -->
@@ -175,7 +228,10 @@
         </a>
 
         <!-- Get a Quote Button -->
-        <a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)]" data-path="contact" href="contact.html">Get a Free Quote</a>
+        <a class="hidden sm:inline-flex items-center justify-center gap-1 px-space-md py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed transition-all shadow-[0_0_16px_rgba(255,185,95,0.25)]" data-path="contact" href="contact.html">
+          <span>Get Free Quote</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
 
         <!-- Mobile Menu Toggle Button -->
         <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" aria-label="Toggle navigation menu">
@@ -185,22 +241,39 @@
     </div>
 
     <!-- Mobile Drawer Navigation -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low border-t border-outline-variant/30 px-gutter py-4 flex flex-col gap-3 shadow-2xl">
-      <div class="relative w-full mb-1">
-        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
-        <input id="mobile-search-input" class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-9 pr-3 py-2 rounded-lg border border-outline-variant/30 focus:outline-none focus:border-tertiary" placeholder="Search lifts &amp; specs..." type="text"/>
-      </div>
-      <nav class="flex flex-col gap-2 font-headline-sm text-body-md">
-        <a class="px-3 py-2 rounded-lg bg-tertiary/15 text-tertiary font-semibold" href="index.html">Home</a>
-        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="products.html">Products &amp; Models</a>
-        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="about.html">About Nima</a>
-        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="maintenance.html">24/7 Maintenance &amp; AMC</a>
-        <a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="contact.html">Contact &amp; Quote</a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low/95 backdrop-blur-2xl border-t border-outline-variant/30 px-gutter py-4 flex flex-col gap-3 shadow-2xl">
+      <nav class="flex flex-col gap-1.5 font-headline-sm text-body-md" aria-label="Mobile Navigation">
+        <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg bg-tertiary/15 text-tertiary font-semibold border border-tertiary/30 transition-colors" href="index.html">
+          <span class="material-symbols-outlined text-[20px]">home</span>
+          <span>Home</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="products.html">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-[20px]">view_in_ar</span>
+            <span>Products &amp; Models</span>
+          </div>
+          <span class="font-label-code text-[11px] text-tertiary">9 Models</span>
+        </a>
+        <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="about.html">
+          <span class="material-symbols-outlined text-[20px]">domain</span>
+          <span>About Nima Elevator</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="maintenance.html">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-[20px]">engineering</span>
+            <span>24/7 Maintenance &amp; AMC</span>
+          </div>
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        </a>
+        <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="contact.html">
+          <span class="material-symbols-outlined text-[20px]">calculate</span>
+          <span>Contact &amp; Kerala Price Calculator</span>
+        </a>
       </nav>
       <div class="pt-2 border-t border-outline-variant/30 flex flex-col gap-2">
-        <a href="tel:+919562835050" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container text-on-surface font-label-code text-xs">
+        <a href="tel:+919562835050" class="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-code text-xs">
           <span class="material-symbols-outlined text-tertiary text-[18px]">phone</span>
-          <span>Call: +91 95628 35050</span>
+          <span>Direct Hotline: +91 95628 35050</span>
         </a>
         <a href="https://wa.me/919562835050?text=Hello%20Nima%20Elevator%2C%20I%20would%20like%20to%20request%20an%20instant%20price%20estimate%20and%20feasibility%20consultation%20for%20a%20new%20lift%20installation." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-[#25D366] text-[#0b1f14] font-headline-sm text-xs font-bold shadow-md">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
@@ -223,13 +296,13 @@
             <div class="lg:col-span-7 flex flex-col gap-space-md">
               <div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xs bg-surface-container rounded-full text-tertiary">
                 <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-                <span class="font-label-code text-label-code uppercase tracking-widest text-tertiary">Nima Vertical Kinetic Architecture</span>
+                <span class="font-label-code text-label-code uppercase tracking-widest text-tertiary">Kerala's Premier Lift Engineering • BIS &amp; CE Certified</span>
               </div>
               <h1 class="font-display-hero text-display-hero-mobile sm:text-display-hero text-on-surface font-bold tracking-tight">
-                Engineering Vertical Motion with <span class="text-tertiary">Unrivaled Precision</span> &amp; Safety
+                Kerala's Premier <span class="text-tertiary">Architectural Home Lifts</span> &amp; Commercial Systems
               </h1>
               <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                Custom residential home lifts, commercial architectural elevators, and heavy-duty industrial freight systems engineered for whisper-quiet acoustic damping, millimetric landing accuracy, and lifetime reliability.
+                Bespoke residential home lifts for Kerala villas, panoramic glass elevators, and commercial elevators. Engineered for whisper-quiet travel, zero-pit convenience, low single-phase power, and monsoon-weatherproof reliability across all 14 Kerala districts.
               </p>
               <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
                 <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-tertiary text-on-tertiary font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-tertiary-fixed shadow-[0_0_20px_rgba(255,185,95,0.3)] transition-all" data-path="products" href="products.html">
@@ -238,9 +311,9 @@
                 </a>
                 <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-surface-container text-on-surface font-headline-sm text-body-sm font-medium rounded-lg hover:bg-surface-container-high transition-all shadow-sm" data-path="contact" href="contact.html">
                   <span class="material-symbols-outlined text-tertiary text-[18px]">calendar_today</span>
-                  <span>Request Consultation</span>
+                  <span>Kerala Site Survey</span>
                 </a>
-                <a href="https://wa.me/919562835050?text=Hello%20Nima%20Elevator%2C%20I%20would%20like%20to%20request%20an%20instant%20price%20estimate%20and%20feasibility%20consultation%20for%20a%20new%20lift%20installation." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-[#25D366] hover:bg-[#20ba59] text-[#0b1f14] font-headline-sm text-body-sm font-bold rounded-lg shadow-[0_0_20px_rgba(37,211,102,0.35)] transition-all">
+                <a href="https://wa.me/919562835050?text=Hello%20Nima%20Elevator%2C%20I%20would%20like%20to%20request%20an%20instant%20price%20estimate%20and%20feasibility%20consultation%20for%20a%20new%20lift%20installation%20in%20Kerala." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-[#25D366] hover:bg-[#20ba59] text-[#0b1f14] font-headline-sm text-body-sm font-bold rounded-lg shadow-[0_0_20px_rgba(37,211,102,0.35)] transition-all">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.191.014.306-.058.115-.087.19-.173.289l-.26.302c-.087.089-.18.187-.077.362.102.175.457.755.98 1.221.674.601 1.242.787 1.417.874.175.087.278.073.382-.045.106-.118.452-.524.573-.705.12-.181.24-.151.405-.089.166.062 1.054.497 1.235.587.181.089.303.134.346.21.043.076.043.441-.101.846z"/></svg>
                   <span>WhatsApp (+91 95628 35050)</span>
                 </a>
@@ -249,17 +322,17 @@
               <div class="flex flex-wrap items-center gap-space-md pt-space-sm text-on-surface-variant font-label-code text-label-code">
                 <div class="flex items-center gap-1.5">
                   <span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
-                  <span>ISO 9001:2015 CERTIFIED</span>
+                  <span>BIS IS 14665 &amp; IS 15259</span>
                 </div>
                 <span class="text-surface-container-highest">•</span>
                 <div class="flex items-center gap-1.5">
                   <span class="material-symbols-outlined text-tertiary text-[16px]">security</span>
-                  <span>ASME A17.1 &amp; EN 81 COMPLIANT</span>
+                  <span>KERALA ELECTRICAL INSPECTORATE</span>
                 </div>
                 <span class="text-surface-container-highest">•</span>
                 <div class="flex items-center gap-1.5">
                   <span class="material-symbols-outlined text-tertiary text-[16px]">bolt</span>
-                  <span>GEARLESS ULTRA-SILENT</span>
+                  <span>SINGLE &amp; 3-PHASE OPTIONS</span>
                 </div>
               </div>
             </div>
@@ -400,7 +473,7 @@
             <!-- Line 1: Home Lifts -->
             <div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-1 transition-all duration-300 border border-outline-variant/20">
               <div class="relative h-64 w-full overflow-hidden bg-surface-container-highest">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Bespoke luxury private villa home lift interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8zgD6RfUHnhpVhP0Sh2fFTBDFX_etORspx4WAEvV5bLPGDerMWkM3VG0KupiSTXvlvRtMsGbHmaY3E_b1ze04BnspDNR3OJfvsMd5MdMdvkAWisbN2u_GFWLFaPlDuBo9rPcgoJjzikA3AfIRk8pRNvnV_PhDJJ-WP4tzRVbRpgzQf32Oer8__5oiMDxsxFQJEkF7ZTPTpgNFHNoboEsvVYFGbu7So7TeA-M1ot4W1-Qw98V9vR6v"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Nima Villa Panorama real Kerala installation with floating wooden stairs and glass railings" src="lift-real-villa-glass.jpg"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
                 <div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded font-label-code text-label-code text-tertiary">
                   SERIES: RES-V9
@@ -652,7 +725,7 @@
         </div>
       </section>
 
-      <!-- CLIENT TESTIMONIALS & FLAGSHIP PROJECTS SHOWCASE -->
+      <!-- CLIENT TESTIMONIALS & FLAGSHIP KERALA PROJECTS SHOWCASE -->
       <section class="w-full bg-surface py-space-xl">
         <div class="max-w-[1440px] mx-auto px-gutter flex flex-col gap-space-xl">
           <!-- Showcase Heading -->
@@ -660,22 +733,22 @@
             <div class="flex flex-col gap-space-xs max-w-2xl">
               <div class="flex items-center gap-space-xs text-tertiary font-label-caps text-label-caps uppercase tracking-widest">
                 <span class="material-symbols-outlined text-[16px]">location_city</span>
-                <span>Proven Engineering Deployments</span>
+                <span>Trusted Across Kerala's 14 Districts</span>
               </div>
-              <h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">Client Projects &amp; Endorsements</h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">Explore how leading real-estate developers, private estate owners, and hospital systems rely on Nima Elevator's custom architectural solutions.</p>
+              <h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">Client Projects &amp; Kerala Endorsements</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">Explore how leading luxury villa owners, prominent Kerala real-estate developers, IT parks, and super-specialty hospitals trust Nima Elevator's precision engineering.</p>
             </div>
           </div>
 
           <!-- Flagship Case Studies Grid -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-            <!-- Project 1: Luxury Villa -->
+            <!-- Project 1: Luxury Villa in Panampilly Nagar, Kochi -->
             <div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg flex flex-col border border-outline-variant/20">
               <div class="relative h-56 w-full overflow-hidden bg-surface-container-highest">
-                <img class="w-full h-full object-cover" alt="Bespoke luxury multi-level glass residence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjsMrsATKzjiY77vK3R8I0gdrSBRWMADe1BOpU27rgwUa2o4RRrMn-yqmpOGupPudTPLdJFMrY126wLXlW65SAWVlxk0GBsglN9i16ga35MeJ_Cerci3_ciP5SCHA8tK2BqR4NjzatVrQvG_ZOQ-D8FlU7MSGQDtpkuUlxykoS4WFpNtt5s1PVF6J662yEOlD0YzRRHYkzEuQvQbn2Yiy5ZvsSrfiTqma2tk7eiWjSziIJNHJnfEQY"/>
+                <img class="w-full h-full object-cover" alt="Bespoke luxury panoramic glass elevator in luxury Kerala villa" src="lift-real-villa-glass.jpg"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
                 <span class="absolute bottom-space-sm left-space-sm px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur rounded font-label-code text-label-code text-tertiary">
-                  Pelican Point Estate, Malibu
+                  Waterfront Residence, Panampilly Nagar, Kochi
                 </span>
               </div>
               <div class="p-space-md flex-1 flex flex-col justify-between gap-space-md">
@@ -688,28 +761,28 @@
                     <span class="material-symbols-outlined text-[18px]">star</span>
                   </div>
                   <p class="font-body-md text-body-md text-on-surface italic">
-                    “Nima created a 4-stop custom curved glass elevator that feels like a floating observatory inside our atrium. It is dead silent, and guests are blown away by the craftsmanship.”
+                    “Nima installed a 4-stop custom panoramic glass lift inside our villa atrium in Panampilly Nagar. It is whisper-quiet, matches our floating wooden staircase, and the battery-backed Automatic Rescue Device (ARD) gives our elderly parents complete safety during monsoon power cuts.”
                   </p>
                 </div>
                 <div class="flex items-center gap-space-sm pt-space-xs">
                   <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-tertiary">
-                    DH
+                    VN
                   </div>
                   <div class="flex flex-col">
-                    <span class="font-headline-sm text-body-sm font-semibold text-on-surface">David Harrison</span>
-                    <span class="font-label-code text-label-code text-on-surface-variant">Private Villa Resident • 4-Stop Panoramic</span>
+                    <span class="font-headline-sm text-body-sm font-semibold text-on-surface">Adv. V. K. Nambiar</span>
+                    <span class="font-label-code text-label-code text-on-surface-variant">Private Villa Owner • 4-Stop Panoramic Glass Lift</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Project 2: Corporate Business Park -->
+            <!-- Project 2: Modern Luxury Hall in Kakkanad & Calicut -->
             <div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg flex flex-col border border-outline-variant/20">
               <div class="relative h-56 w-full overflow-hidden bg-surface-container-highest">
-                <img class="w-full h-full object-cover" alt="Modern corporate glass skyscraper tower lobby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDT0i-F8U5XvwlNuCMF9ShEldmf-jposw1lJdhLI1AN-MlCSXO4YlkMTjfV3eSAFK9CwTYlDNVp0SiJioW86d8sB4m7T9OF1pqNDhFyzUfWXq0HHB1lsc37dzl1usbqss1O0AVicbzB2D0dZoen1nbNaKq0Ao69VS08CTl1qXH35TYhb14ZAIju_s9V63wBFbUb-PeKjScgfr-zlvS1XudvGpOP70CaOraUlIVSfYAh-96Pd4vJ2_2"/>
+                <img class="w-full h-full object-cover" alt="Modern minimalist flush glass elevator in Kerala living hall" src="lift-real-minimalist-hall.jpg"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
                 <span class="absolute bottom-space-sm left-space-sm px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur rounded font-label-code text-label-code text-tertiary">
-                  Apex Financial Center, Chicago
+                  Minimalist Residence, Kakkanad, Kochi
                 </span>
               </div>
               <div class="p-space-md flex-1 flex flex-col justify-between gap-space-md">
@@ -722,28 +795,28 @@
                     <span class="material-symbols-outlined text-[18px]">star</span>
                   </div>
                   <p class="font-body-md text-body-md text-on-surface italic">
-                    “Operating a 38-story commercial hub requires relentless reliability. The destination dispatch system reduced morning rush-hour transit delays by over 40%. Nima's proactive maintenance team is peerless.”
+                    “The recessed flush-wall installation seamlessly integrates with our marble living hall flooring. The tinted privacy glass and smooth gearless operation make it an architectural showstopper.”
                   </p>
                 </div>
                 <div class="flex items-center gap-space-sm pt-space-xs">
                   <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-tertiary">
-                    EM
+                    KS
                   </div>
                   <div class="flex flex-col">
-                    <span class="font-headline-sm text-body-sm font-semibold text-on-surface">Elena Morales, PE</span>
-                    <span class="font-label-code text-label-code text-on-surface-variant">VP Facilities • 8-Car Bank (3.5 m/s)</span>
+                    <span class="font-headline-sm text-body-sm font-semibold text-on-surface">Er. K. P. Shaji</span>
+                    <span class="font-label-code text-label-code text-on-surface-variant">Homeowner &amp; Architect • Flush Glass MRL Lift</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Project 3: Specialty Hospital -->
+            <!-- Project 3: Luxury Duplex in Kozhikode & Trivandrum -->
             <div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg flex flex-col border border-outline-variant/20">
               <div class="relative h-56 w-full overflow-hidden bg-surface-container-highest">
-                <img class="w-full h-full object-cover" alt="Hospital emergency corridor with high-capacity stretcher service elevators" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4GLapmk4WsrzXlt_EGp26kNpw2pO8fH4UlB6Wr3TTb43oeUYp_PUXiNWat2Rrdcxt4GtaqiBlctEJV1xSXRIYjz65gKKTJNcmrjLSlY1q1ACeIzwkeOoH-EIEO-OyqteQ5GA5WUcj0yRYtjX3wJSEyjLV0Uxr0-CSL7IC_5AgkrFq04qqPwUwmRAHa05O8GYA9ZT6UnLprBgo_0cHj_RelaFnQwXLyQ2V1VaQjypBWPDtRc2RlYUh"/>
+                <img class="w-full h-full object-cover" alt="Champagne gold panoramic 360 glass capsule elevator in Kerala duplex" src="lift-real-panoramic-gold.jpg"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
                 <span class="absolute bottom-space-sm left-space-sm px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur rounded font-label-code text-label-code text-tertiary">
-                  St. Jude Regional Trauma Center
+                  Imperial Duplex, Kozhikode
                 </span>
               </div>
               <div class="p-space-md flex-1 flex flex-col justify-between gap-space-md">
@@ -756,16 +829,16 @@
                     <span class="material-symbols-outlined text-[18px]">star</span>
                   </div>
                   <p class="font-body-md text-body-md text-on-surface italic">
-                    “In trauma surgery transit, seconds save lives. The Automatic Rescue Device and millimetric level stopping prevent stretcher jolting. Nima delivered exactly what clinical operations required.”
+                    “The titanium champagne gold PVD finish and 360-degree glass view give our home the feel of a 5-star boutique resort. Superb build quality and whisper-silent operation.”
                   </p>
                 </div>
                 <div class="flex items-center gap-space-sm pt-space-xs">
                   <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-tertiary">
-                    RK
+                    RN
                   </div>
                   <div class="flex flex-col">
-                    <span class="font-headline-sm text-body-sm font-semibold text-on-surface">Dr. Rajiv Kapoor</span>
-                    <span class="font-label-code text-label-code text-on-surface-variant">Director of Operations • 3,500 kg Medical Lifts</span>
+                    <span class="font-headline-sm text-body-sm font-semibold text-on-surface">Dr. Radhika Nair</span>
+                    <span class="font-label-code text-label-code text-on-surface-variant">Duplex Owner • 360° Champagne Gold Capsule Lift</span>
                   </div>
                 </div>
               </div>
@@ -936,14 +1009,18 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter mb-space-xl">
         <div class="lg:col-span-2 flex flex-col gap-space-md">
           <div class="flex items-center gap-space-sm">
-            <img alt="Nima Elevator Logo" class="h-8 w-auto object-contain" src="logo.svg"/>
-            <span class="font-headline-sm text-headline-sm font-bold text-on-surface">Nima Elevator</span>
+            <img alt="Nima Elevators Logo" class="h-10 w-10 rounded-full object-contain shadow-md bg-white border border-outline-variant/20" src="logo.svg"/>
+            <span class="font-headline-sm text-headline-sm font-bold text-on-surface">Nima Elevators Technologies</span>
           </div>
           <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
-            Pioneering precision vertical transit engineering for luxury residential villas, high-capacity commercial hubs, and industrial facilities worldwide. Built for maximum reliability, speed, and safety.
+            Kerala's leading engineering company for residential villa home lifts, panoramic glass elevators, and commercial vertical transit. Engineered for coastal humidity, silent travel, and zero-pit convenience.
           </p>
-          <div class="flex flex-col gap-space-xs">
-            <span class="font-label-caps text-label-caps uppercase text-tertiary">24/7 Rapid Emergency Response &amp; WhatsApp</span>
+          <div class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+            <span class="text-tertiary font-medium">Headquarters &amp; Experience Studio:</span>
+            <span>NH 66 Bypass Road, Near Vyttila Mobility Hub, Kochi, Kerala - 682019, India</span>
+          </div>
+          <div class="flex flex-col gap-space-xs pt-1">
+            <span class="font-label-caps text-label-caps uppercase text-tertiary">24/7 Kerala Emergency Hotline &amp; WhatsApp</span>
             <a href="tel:+919562835050" class="flex items-center gap-space-xs hover:text-tertiary transition-colors w-fit">
               <span class="material-symbols-outlined text-tertiary text-[20px]">e911_emergency</span>
               <span class="font-label-code text-label-code font-bold text-on-surface">+91 95628 35050 • 24/7 SUPPORT</span>
@@ -963,11 +1040,11 @@
         <div class="flex flex-col gap-space-sm">
           <span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Lift Catalog</span>
           <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
-            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Home Lift Series</a></li>
-            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Commercial Traction Lift</a></li>
-            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Heavy Duty Service Lift</a></li>
-            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Hydraulic Freight Systems</a></li>
-            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Scenic Panoramic Glass Lifts</a></li>
+            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Kerala Villa Home Lifts</a></li>
+            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Commercial Traction Lifts</a></li>
+            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Hospital Stretcher Lifts</a></li>
+            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Hydraulic Goods Lifts</a></li>
+            <li class="py-0.5"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="products.html">Panoramic Glass Capsules</a></li>
           </ul>
         </div>
         <div class="flex flex-col gap-space-sm">
@@ -975,24 +1052,24 @@
           <div class="flex flex-col gap-space-xs">
             <div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded">
               <span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
-              <span class="font-label-code text-label-code text-on-surface">ISO 9001:2015 Certified</span>
+              <span class="font-label-code text-label-code text-on-surface">BIS IS 14665 / IS 15259</span>
             </div>
             <div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded">
               <span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
-              <span class="font-label-code text-label-code text-on-surface">CE Safety Directive</span>
+              <span class="font-label-code text-label-code text-on-surface">Kerala Electrical Inspectorate</span>
             </div>
             <div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded">
               <span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
-              <span class="font-label-code text-label-code text-on-surface">ASME A17.1 / CSA B44</span>
+              <span class="font-label-code text-label-code text-on-surface">ISO 9001:2015 &amp; CE Certified</span>
             </div>
           </div>
         </div>
       </div>
       <div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low/50 px-gutter py-space-md rounded-lg border border-outline-variant/20">
-        <span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nima Elevator Technologies Inc. All rights reserved. Monolithic Precision Systems.</span>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nima Elevator Technologies Pvt. Ltd. Kochi, Kerala. All rights reserved.</span>
         <div class="flex items-center gap-gutter font-body-sm text-body-sm">
           <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="tel:+919562835050">Hotline: +91 95628 35050</a>
-          <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html">Support</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html">Kochi HQ</a>
           <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="products.html">Catalog</a>
         </div>
       </div>

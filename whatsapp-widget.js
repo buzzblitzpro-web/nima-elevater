@@ -7,15 +7,15 @@
 const NIMA_WHATSAPP_CONFIG = {
   phoneNumber: "919562835050", // +91 95628 35050
   displayPhone: "+91 95628 35050",
-  businessName: "Nima Elevator Technologies (Kerala)",
-  defaultMessage: "Hello Nima Elevator, I would like to inquire about elevator solutions for my Kerala project.",
+  businessName: "Nima Elevator Technologies (Kollam, Kerala)",
+  defaultMessage: "Hello Nima Elevator, I would like to inquire about elevator solutions for my project in Kollam / Trivandrum / Kottayam.",
   quickInquiries: [
     {
       id: "quote",
       icon: "request_quote",
       title: "Instant Kerala Lift Quote",
-      desc: "Get fast pricing & site feasibility in ₹ Lakhs",
-      msg: "Hello Nima Elevator team, I would like to request an instant price estimate and feasibility consultation for a new lift installation in Kerala."
+      desc: "Get fast pricing in Kollam, TVM & Kottayam",
+      msg: "Hello Nima Elevator team, I would like to request an instant price estimate and feasibility consultation for a new lift installation in Kollam / Trivandrum / Kottayam."
     },
     {
       id: "cad",
@@ -27,16 +27,16 @@ const NIMA_WHATSAPP_CONFIG = {
     {
       id: "maintenance",
       icon: "build_circle",
-      title: "Kerala AMC & Maintenance",
-      desc: "24/7 contracts & preventive health checks",
-      msg: "Hello, I am interested in your Kerala Annual Maintenance Contracts (AMC) and 24/7 breakdown dispatch service."
+      title: "Regional AMC & Maintenance",
+      desc: "24/7 contracts in Kollam, Trivandrum & Kottayam",
+      msg: "Hello, I am interested in your Annual Maintenance Contracts (AMC) and 24/7 breakdown dispatch service in Kollam / Trivandrum / Kottayam."
     },
     {
       id: "emergency",
       icon: "e911_emergency",
       title: "24/7 Emergency Dispatch",
-      desc: "Priority breakdown & rescue across Kerala",
-      msg: "URGENT: Requesting immediate elevator breakdown assistance & emergency technician dispatch in Kerala."
+      desc: "Priority breakdown in Kollam, TVM & Kottayam",
+      msg: "URGENT: Requesting immediate elevator breakdown assistance & emergency technician dispatch in Kollam / Trivandrum / Kottayam."
     }
   ]
 };

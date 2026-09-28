@@ -19,10 +19,10 @@ const NIMA_WHATSAPP_CONFIG = {
     },
     {
       id: "cad",
-      icon: "architecture",
-      title: "Architectural & CAD Specs",
+      icon: "engineering",
+      title: "Engineering & CAD Specs",
       desc: "Shaft drawings, BIS IS 14665 & BIM models",
-      msg: "Hi Nima Engineering, please share architectural CAD hoistway specifications, BIS IS 14665 compliance details, and BIM layout files."
+      msg: "Hi Nima Engineering, please share engineering CAD hoistway specifications, BIS IS 14665 compliance details, and BIM layout files."
     },
     {
       id: "maintenance",
@@ -105,7 +105,7 @@ window.sendConfigurationToWhatsApp = function(building, capacity, speed, model, 
               `⚡ Hoist Velocity: ${speed}\n` +
               `⚙️ Recommended Model: ${model || 'Standard'}\n` +
               `📐 Estimated Shaft: ${shaft || 'Custom'}\n\n` +
-              `Please provide architectural shaft drawings, CAD feasibility review, and estimated quotation for this project.`;
+              `Please provide technical shaft drawings, CAD feasibility review, and estimated quotation for this project.`;
   openWhatsAppChat(msg);
 };
 
